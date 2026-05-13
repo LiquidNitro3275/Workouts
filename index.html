@@ -149,6 +149,15 @@
   <main id="app"></main>
 
   <script>
+    const warmup = [
+      "Foam Roller Upper Back — 60 sec",
+      "Band Pull-Aparts — 2 x 20",
+      "Scapular Pullups — 2 x 8",
+      "Pushups — 2 x 10",
+      "Bodyweight Squats — 2 x 15",
+      "Light Dynamic Stretching — 2 min"
+    ];
+
     const workouts = [
       {
         title: "DAY 1 — POWER AESTHETIC",
@@ -162,7 +171,15 @@
           ["Calves/Forearms + Abs", ["Standing Calf Raises — 4 x 15-20", "Hanging Leg Raises — 4 x 10-15"]],
           ["Calves/Forearms + Abs", ["Wrist Curls + Reverse Wrist Curls — 4 x 12-15", "Weighted Crunches — 4 x 12-15"]]
         ],
-        cooldown: ["Dead Hangs", "Chest Stretch", "Hip Flexor Stretch", "Light Walking"]
+        cooldown: [
+          "Dead Hangs — 45-60 sec",
+          "Doorway Chest Stretch — 45 sec each side",
+          "Lat Stretch — 45 sec each side",
+          "Hip Flexor Stretch — 45 sec each side",
+          "Hamstring Stretch — 45 sec each side",
+          "Calf Stretch — 45 sec each side",
+          "Deep Breathing — 1 min"
+        ]
       },
       {
         title: "DAY 2 — CALISTHENICS DOMINANCE",
@@ -176,7 +193,15 @@
           ["Calves/Forearms + Abs", ["Single-Leg Calf Raises — 4 x 15-20", "Hanging Knee Raises — 4 x 15-20"]],
           ["Calves/Forearms + Abs", ["Farmer Holds — 4 x 30-45 sec", "Hollow Body Holds — 4 x 30-60 sec"]]
         ],
-        cooldown: ["Dead Hangs", "Shoulder Stretch", "Hamstring Stretch", "Deep Breathing"]
+        cooldown: [
+          "Dead Hangs — 45-60 sec",
+          "Shoulder Cross-Body Stretch — 45 sec each side",
+          "Child's Pose Lat Stretch — 60 sec",
+          "Couch Stretch / Hip Flexor Stretch — 45 sec each side",
+          "Seated Hamstring Stretch — 45 sec each side",
+          "Butterfly Stretch — 60 sec",
+          "Deep Breathing — 1 min"
+        ]
       },
       {
         title: "DAY 3 — HYPERTROPHY / PUMP",
@@ -190,7 +215,15 @@
           ["Calves/Forearms + Abs", ["Seated Calf Raises — 4 x 15-20", "Hanging Leg Raises — 4 x 12-15"]],
           ["Calves/Forearms + Abs", ["Reverse Wrist Curls — 4 x 12-15", "Russian Twists — 4 x 20 total"]]
         ],
-        cooldown: ["Lat Stretch", "Chest Stretch", "Quad Stretch", "Light Hanging"]
+        cooldown: [
+          "Lat Stretch — 45 sec each side",
+          "Doorway Chest Stretch — 45 sec each side",
+          "Quad Stretch — 45 sec each side",
+          "Figure-4 Glute Stretch — 45 sec each side",
+          "Hamstring Stretch — 45 sec each side",
+          "Wrist Flexor + Extensor Stretch — 30 sec each",
+          "Light Hanging — 45 sec"
+        ]
       },
       {
         title: "DAY 4 — HYBRID CHAOS",
@@ -204,7 +237,15 @@
           ["Calves/Forearms + Abs", ["Explosive Calf Raises — 4 x 20", "Toes-to-Bar / Hanging Leg Raises — 4 x 10-15"]],
           ["Calves/Forearms + Abs", ["Farmer Carries — 4 rounds", "Plank to Failure — 4 sets"]]
         ],
-        cooldown: ["Dead Hangs", "Cobra Stretch", "Hip Stretch", "Shoulder Mobility"]
+        cooldown: [
+          "Dead Hangs — 45-60 sec",
+          "Cobra Stretch — 45 sec",
+          "Child's Pose — 60 sec",
+          "Hip Flexor Stretch — 45 sec each side",
+          "Deep Squat Hold — 60 sec",
+          "Shoulder Wall Stretch — 45 sec each side",
+          "Controlled Breathing — 1 min"
+        ]
       },
       {
         title: "DAY 5 — STRENGTH OVERDRIVE",
@@ -218,7 +259,15 @@
           ["Calves/Forearms + Abs", ["Weighted Calf Raises — 5 x 15-20", "Hanging Windshield Wipers — 5 x 8-12"]],
           ["Calves/Forearms + Abs", ["Wrist Roller / Wrist Curls — 5 rounds", "Weighted Plank — 5 x 45-60 sec"]]
         ],
-        cooldown: ["Deep Lat Stretch", "Pec Stretch", "Hamstring Stretch", "Controlled Breathing"]
+        cooldown: [
+          "Deep Lat Stretch — 45 sec each side",
+          "Doorway Pec Stretch — 45 sec each side",
+          "Hamstring Stretch — 45 sec each side",
+          "Quad Stretch — 45 sec each side",
+          "Calf Stretch — 45 sec each side",
+          "Forearm Stretch — 30 sec each side",
+          "Controlled Breathing — 1-2 min"
+        ]
       },
       {
         title: "DAY 6 — V-TAPER FORGE",
@@ -232,7 +281,15 @@
           ["Calves/Forearms + Abs", ["Single-Leg Weighted Calf Raises — 4 x 15-20", "Hanging Straight-Leg Raises — 4 x 10-15"]],
           ["Calves/Forearms + Abs", ["Dumbbell Finger Curls — 4 x 12-15", "Side Plank Holds — 4 x 30-45 sec each side"]]
         ],
-        cooldown: ["Dead Hangs", "Thoracic Stretch", "Hip Flexor Stretch", "Calf Stretch"]
+        cooldown: [
+          "Dead Hangs — 45-60 sec",
+          "Thoracic Extension Stretch — 60 sec",
+          "Lat Stretch — 45 sec each side",
+          "Hip Flexor Stretch — 45 sec each side",
+          "Pigeon Stretch / Figure-4 Stretch — 45 sec each side",
+          "Calf Stretch — 45 sec each side",
+          "Neck + Trap Stretch — 30 sec each side"
+        ]
       },
       {
         title: "DAY 7 — CALISTHENICS WARPATH",
@@ -246,7 +303,15 @@
           ["Calves/Forearms + Abs", ["Explosive Single-Leg Calf Raises — 4 x 15-20", "Toes-to-Bar / Hanging Raises — 4 x 10-15"]],
           ["Calves/Forearms + Abs", ["Towel Farmer Holds — 4 x 30-45 sec", "Hollow Rocks — 4 x 20-30 sec"]]
         ],
-        cooldown: ["Wrist Mobility", "Chest Stretch", "Lat Stretch", "Deep Hanging"]
+        cooldown: [
+          "Wrist Mobility Stretch — 60 sec",
+          "Chest Stretch — 45 sec each side",
+          "Lat Stretch — 45 sec each side",
+          "Deep Hanging — 45-60 sec",
+          "Deep Squat Hold — 60 sec",
+          "Butterfly Stretch — 60 sec",
+          "Hamstring Stretch — 45 sec each side"
+        ]
       },
       {
         title: "DAY 8 — TITAN REFINEMENT",
@@ -260,7 +325,15 @@
           ["Calves/Forearms + Abs", ["Standing Weighted Calf Raises — 4 x 15-20", "Hanging Knee-to-Elbow Raises — 4 x 12-15"]],
           ["Calves/Forearms + Abs", ["Reverse Wrist Curls + Wrist Rotations — 4 x 12-15", "Weighted Situps — 4 x 12-15"]]
         ],
-        cooldown: ["Dead Hangs", "Pec Stretch", "Hamstring Stretch", "Breathing Cooldown"]
+        cooldown: [
+          "Dead Hangs — 45-60 sec",
+          "Pec Stretch — 45 sec each side",
+          "Hamstring Stretch — 45 sec each side",
+          "Hip Flexor Stretch — 45 sec each side",
+          "Spinal Twist — 45 sec each side",
+          "Calf Stretch — 45 sec each side",
+          "Breathing Cooldown — 1-2 min"
+        ]
       }
     ];
 
@@ -279,6 +352,12 @@
 
       section.innerHTML = `
         <h2 class="day-title">${workout.title}</h2>
+
+        <div class="cooldown">
+          <h3>Warmup</h3>
+          <ul>${warmup.map(item => `<li>${item}</li>`).join("")}</ul>
+        </div>
+
         ${workout.supersets.map((superset, supersetIndex) => `
           <details>
             <summary>Superset ${supersetIndex + 1} — ${superset[0]}</summary>
