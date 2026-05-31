@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>8-Day Gym-Calisthenics Warrior Program</title>
+  <title>8-Day Weighted Calisthenics Warrior Program</title>
   <style>
     * {
       box-sizing: border-box;
@@ -121,7 +121,7 @@
       margin-top: 3px;
     }
 
-    .card {
+    .block {
       background: #111827;
       border: 1px solid #2d3748;
       border-radius: 16px;
@@ -129,40 +129,38 @@
       margin: 16px 0;
     }
 
-    .card h3 {
+    .block h3 {
       margin-bottom: 8px;
     }
 
-    .card ul {
+    .block ul {
       padding-left: 20px;
       color: #d5d5d5;
     }
 
-    .rules {
-      color: #d5d5d5;
-      font-size: 0.95rem;
-    }
-
-    .rules strong {
-      color: white;
+    .note {
+      color: #c7d2fe;
+      font-size: 0.92rem;
+      margin-top: 8px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>8-Day Gym-Calisthenics Warrior Program</h1>
-    <p class="subtitle">Full Body • Calisthenics First • Gym Equipment Second • Clean Warrior Build</p>
+    <h1>8-Day Weighted Calisthenics Warrior Program</h1>
+    <p class="subtitle">Full Body • Calisthenics First • Gym Assisted • Warrior Build</p>
   </header>
 
   <nav class="tabs" id="tabs"></nav>
   <main id="app"></main>
 
   <script>
-    const cardioOptions = [
-      "Treadmill Incline Walk — 30-45 min | Incline 8-15 | Moderate pace",
-      "Stairmaster — 20-30 min + Bike/Treadmill Walk — 10-15 min",
-      "Elliptical or Bike — 35-45 min | Joint-friendly pace",
-      "Rowing Machine — 10-15 min + Incline Walk — 20-30 min"
+    const cardio = [
+      "Treadmill Incline Walk / Stairmaster / Bike / Elliptical — 30-45 min",
+      "Keep intensity moderate: you should sweat, but still be able to talk",
+      "Do not sprint or go all-out before the workout",
+      "Best default: Incline walk at 8-15 incline for 30-45 min",
+      "If legs are sore: use bike or elliptical instead"
     ];
 
     const warmup = [
@@ -177,11 +175,13 @@
     ];
 
     const rules = [
-      "Rest 10-20 sec between exercises inside a superset.",
-      "Rest 60-90 sec after each superset.",
-      "On strength-heavy days, rest 90-120 sec if needed.",
-      "Bodyweight movement comes first; machines support the warrior build, they do not replace it.",
-      "Stop immediately if sharp pain appears. Keep reps controlled and clean."
+      "Bodyweight movement comes first whenever possible",
+      "Freeweight curls are the main biceps accessory for calisthenics carryover",
+      "Cable curls are used only as secondary polish/pump work",
+      "Rest 10-20 sec between exercises inside a superset",
+      "Rest 60-90 sec after each superset",
+      "For heavy strength sets, rest 90-120 sec if needed",
+      "Use controlled reps and clean form. No ego lifting"
     ];
 
     const workouts = [
@@ -211,7 +211,7 @@
         title: "DAY 2 — CALISTHENICS DOMINANCE",
         supersets: [
           ["Back and Biceps", ["Wide-Grip Pullups / Assisted Wide-Grip Pullups — 4 x 8-AMRAP", "EZ-Bar Curls — 4 x 10-12"]],
-          ["Back and Biceps", ["Chinups / Assisted Chinups — 4 x 8-AMRAP", "Cable Rope Hammer Curls — 4 x 10-12"]],
+          ["Back and Biceps", ["Chinups / Assisted Chinups — 4 x 8-AMRAP", "Cross-Body Hammer Curls — 4 x 10-12"]],
           ["Chest and Triceps", ["Parallel Bar Dips — 4 x AMRAP", "Overhead Cable Tricep Extensions — 4 x 12-15"]],
           ["Chest and Triceps", ["Explosive Pushups — 4 x 8-15", "Close-Grip Pushups — 4 x AMRAP"]],
           ["Shoulders and Upper Legs", ["Pike Pushups / Machine Shoulder Press — 4 x 8-12", "Goblet Squats — 4 x 12-15"]],
@@ -222,7 +222,7 @@
         cooldown: [
           "Shoulder Cross-Body Stretch — 45 sec each side",
           "Child's Pose Lat Stretch — 60 sec",
-          "Couch Stretch — 45 sec each side",
+          "Couch Stretch / Hip Flexor Stretch — 45 sec each side",
           "Deep Squat Hold — 60 sec",
           "Seated Hamstring Stretch — 45 sec each side",
           "Butterfly Stretch — 60 sec",
@@ -281,7 +281,7 @@
           ["Chest and Triceps", ["Weighted Dips / Heavy Assisted Dips — 5 x 5-8", "Heavy Rope Pushdowns — 5 x 8-10"]],
           ["Chest and Triceps", ["Heavy Incline Dumbbell Press — 5 x 5-8", "Close-Grip Deficit Pushups — 5 x AMRAP"]],
           ["Shoulders and Upper Legs", ["Heavy Dumbbell Shoulder Press — 5 x 6-10", "Leg Press — 5 x 8-12"]],
-          ["Shoulders and Upper Legs", ["Upright Rows / Cable High Pulls — 5 x 10-12", "Romanian Deadlifts — 5 x 8-10"]],
+          ["Shoulders and Upper Legs", ["Cable High Pulls — 5 x 10-12", "Romanian Deadlifts — 5 x 8-10"]],
           ["Lower Legs and Abs", ["Weighted Standing Calf Raises — 5 x 15-20", "Hanging Windshield Wipers — 5 x 8-12"]],
           ["Lower Legs and Abs", ["Wrist Roller / Dumbbell Wrist Curls — 5 rounds", "Weighted Plank — 5 x 45-60 sec"]]
         ],
@@ -321,7 +321,7 @@
         title: "DAY 7 — CALISTHENICS WARPATH",
         supersets: [
           ["Back and Biceps", ["Typewriter Pullups / Assisted Typewriters — 4 x 6-10", "Alternating Hammer Curls — 4 x 10-12"]],
-          ["Back and Biceps", ["Towel Grip Chinups / Rope Grip Pulldowns — 4 x 8-AMRAP", "Slow Eccentric Cable Curls — 4 x 10-12"]],
+          ["Back and Biceps", ["Towel Grip Chinups / Rope Grip Pulldowns — 4 x 8-AMRAP", "Slow Eccentric Dumbbell Curls — 4 x 10-12"]],
           ["Chest and Triceps", ["Archer Pushups / Assisted Archer Pushups — 4 x 8-12", "Dumbbell Skull Crushers — 4 x 10-12"]],
           ["Chest and Triceps", ["Clap Pushups / Explosive Pushups — 4 x 8-15", "Cable Tricep Pushdowns — 4 x 12-15"]],
           ["Shoulders and Upper Legs", ["Elevated Pike Pushups — 4 x 8-12", "Dumbbell Jump Squats — 4 x 10-15"]],
@@ -379,13 +379,14 @@
       section.innerHTML = `
         <h2 class="day-title">${workout.title}</h2>
 
-        <div class="card">
-          <h3>Cardio First — 30-45 min</h3>
-          <ul>${cardioOptions.map(item => `<li>${item}</li>`).join("")}</ul>
+        <div class="block">
+          <h3>Cardio First</h3>
+          <ul>${cardio.map(item => `<li>${item}</li>`).join("")}</ul>
+          <p class="note">Goal: conditioning and fat loss without killing strength.</p>
         </div>
 
-        <div class="card">
-          <h3>Warmup — 8-10 min</h3>
+        <div class="block">
+          <h3>Warmup</h3>
           <ul>${warmup.map(item => `<li>${item}</li>`).join("")}</ul>
         </div>
 
@@ -406,13 +407,13 @@
           </details>
         `).join("")}
 
-        <div class="card">
+        <div class="block">
           <h3>Cooldown</h3>
           <ul>${workout.cooldown.map(item => `<li>${item}</li>`).join("")}</ul>
         </div>
 
-        <div class="card rules">
-          <h3>Rules</h3>
+        <div class="block">
+          <h3>Program Rules</h3>
           <ul>${rules.map(item => `<li>${item}</li>`).join("")}</ul>
         </div>
       `;
