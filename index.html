@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>8-Day Weighted Calisthenics Warrior Program</title>
+  <title>8-Day Home Calisthenics Warrior Workout</title>
   <style>
     * {
       box-sizing: border-box;
@@ -121,169 +121,147 @@
       margin-top: 3px;
     }
 
-    .block {
+    .cooldown {
       background: #111827;
       border: 1px solid #2d3748;
       border-radius: 16px;
       padding: 14px;
-      margin: 16px 0;
+      margin: 16px 0 28px;
     }
 
-    .block h3 {
+    .cooldown h3 {
       margin-bottom: 8px;
     }
 
-    .block ul {
+    .cooldown ul {
       padding-left: 20px;
       color: #d5d5d5;
-    }
-
-    .note {
-      color: #c7d2fe;
-      font-size: 0.92rem;
-      margin-top: 8px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>8-Day Weighted Calisthenics Warrior Program</h1>
-    <p class="subtitle">Full Body • Calisthenics First • Gym Assisted • Warrior Build</p>
+    <h1>8-Day Home Warrior Program</h1>
+    <p class="subtitle">Full Body • Calisthenics • Power Tower / Bench / Dumbbells Focus</p>
   </header>
 
   <nav class="tabs" id="tabs"></nav>
   <main id="app"></main>
 
   <script>
-    const cardio = [
-      "Treadmill Incline Walk / Stairmaster / Bike / Elliptical — 30-45 min",
-      "Keep intensity moderate: you should sweat, but still be able to talk",
-      "Do not sprint or go all-out before the workout",
-      "Best default: Incline walk at 8-15 incline for 30-45 min",
-      "If legs are sore: use bike or elliptical instead"
-    ];
-
     const warmup = [
-      "Dead Hang — 30-45 sec",
+      "Foam Roller Upper Back + Lats — 60 sec",
+      "Foam Roller Quads + Hamstrings — 60 sec",
       "Band Pull-Aparts — 2 x 20",
-      "Scapular Pullups — 2 x 8",
-      "Pushups — 2 x 10",
-      "Bodyweight Squats — 2 x 15",
-      "Walking Lunges — 1 x 10 each leg",
-      "Shoulder Circles — 30 sec forward + 30 sec backward",
-      "Light Cable Face Pulls — 2 x 15"
-    ];
-
-    const rules = [
-      "Bodyweight movement comes first whenever possible",
-      "Freeweight curls are the main biceps accessory for calisthenics carryover",
-      "Cable curls are used only as secondary polish/pump work",
-      "Rest 10-20 sec between exercises inside a superset",
-      "Rest 60-90 sec after each superset",
-      "For heavy strength sets, rest 90-120 sec if needed",
-      "Use controlled reps and clean form. No ego lifting"
+      "Band Shoulder Dislocates — 2 x 12",
+      "Scapular Pullups on Power Tower — 2 x 8",
+      "Dip Bar Support Holds — 2 x 20-30 sec",
+      "Push-Up Board Slow Pushups — 2 x 8-10",
+      "Bench Step-Ups — 1 x 10 each leg",
+      "Empty-Bar Hip Hinges / Good Mornings — 1 x 15",
+      "Stability Ball Dead Bugs — 1 x 10 each side"
     ];
 
     const workouts = [
       {
         title: "DAY 1 — POWER AESTHETIC",
         supersets: [
-          ["Back and Biceps", ["Pullups / Assisted Pullups — 4 x 8-12", "Standing Dumbbell Curls — 4 x 8-12"]],
-          ["Back and Biceps", ["Seated Cable Rows — 4 x 10-12", "Hammer Curls — 4 x 10-12"]],
-          ["Chest and Triceps", ["Weighted Dips / Assisted Dips — 4 x 8-12", "Cable Tricep Pushdowns — 4 x 10-15"]],
-          ["Chest and Triceps", ["Incline Dumbbell Press — 4 x 8-12", "Diamond Pushups — 4 x AMRAP"]],
-          ["Shoulders and Upper Legs", ["Dumbbell Shoulder Press — 4 x 8-12", "Bulgarian Split Squats — 4 x 8-12 each leg"]],
-          ["Shoulders and Upper Legs", ["Cable Lateral Raises — 4 x 12-15", "Romanian Deadlifts — 4 x 8-12"]],
-          ["Lower Legs and Abs", ["Standing Calf Raise Machine — 4 x 15-20", "Hanging Leg Raises — 4 x 10-15"]],
-          ["Lower Legs and Abs", ["Farmer Carries — 4 x 30-45 sec", "Cable Crunches — 4 x 12-15"]]
+          ["Back + Biceps", ["Slow Tempo Pullups on Power Tower — 4 x 8-12", "Dumbbell Curls — 4 x 8-12"]],
+          ["Back + Biceps", ["Heavy One-Arm Dumbbell Rows — 4 x 8-12", "Hammer Curls — 4 x 10-12"]],
+          ["Chest + Triceps", ["Incline Dumbbell Press — 4 x 8-12", "Overhead Dumbbell Tricep Extensions — 4 x 10-12"]],
+          ["Chest + Triceps", ["Push-Up Board Weighted Deficit Pushups — 4 x 10-15", "Diamond Pushups — 4 x AMRAP"]],
+          ["Shoulders + Upper Legs", ["Dumbbell Shoulder Press — 4 x 8-12", "Bulgarian Split Squats — 4 x 8-12"]],
+          ["Shoulders + Upper Legs", ["Lateral Raises — 4 x 12-15", "Romanian Deadlifts — 4 x 8-12"]],
+          ["Calves/Forearms + Abs", ["Dumbbell Standing Calf Raises — 4 x 15-20", "Power Tower Leg Raises — 4 x 10-15"]],
+          ["Calves/Forearms + Abs", ["Wrist Curls + Reverse Wrist Curls — 4 x 12-15", "Ab Roller Rollouts — 4 x 8-12"]]
         ],
         cooldown: [
-          "Dead Hang — 45-60 sec",
-          "Lat Stretch — 45 sec each side",
+          "Dead Hangs — 45-60 sec",
           "Doorway Chest Stretch — 45 sec each side",
+          "Lat Stretch — 45 sec each side",
           "Hip Flexor Stretch — 45 sec each side",
           "Hamstring Stretch — 45 sec each side",
           "Calf Stretch — 45 sec each side",
-          "Deep Breathing — 1-2 min"
+          "Deep Breathing — 1 min"
         ]
       },
       {
         title: "DAY 2 — CALISTHENICS DOMINANCE",
         supersets: [
-          ["Back and Biceps", ["Wide-Grip Pullups / Assisted Wide-Grip Pullups — 4 x 8-AMRAP", "EZ-Bar Curls — 4 x 10-12"]],
-          ["Back and Biceps", ["Chinups / Assisted Chinups — 4 x 8-AMRAP", "Cross-Body Hammer Curls — 4 x 10-12"]],
-          ["Chest and Triceps", ["Parallel Bar Dips — 4 x AMRAP", "Overhead Cable Tricep Extensions — 4 x 12-15"]],
-          ["Chest and Triceps", ["Explosive Pushups — 4 x 8-15", "Close-Grip Pushups — 4 x AMRAP"]],
-          ["Shoulders and Upper Legs", ["Pike Pushups / Machine Shoulder Press — 4 x 8-12", "Goblet Squats — 4 x 12-15"]],
-          ["Shoulders and Upper Legs", ["Rear Delt Cable Flyes — 4 x 12-15", "Leg Press — 4 x 10-15"]],
-          ["Lower Legs and Abs", ["Seated Calf Raise Machine — 4 x 15-20", "Captain's Chair Knee Raises — 4 x 15-20"]],
-          ["Lower Legs and Abs", ["Plate Pinch Holds — 4 x 30-45 sec", "Hollow Body Holds — 4 x 30-60 sec"]]
+          ["Back + Biceps", ["Wide Grip Pullups on Power Tower — 4 x 8-AMRAP", "Alternating Dumbbell Curls — 4 x 10-12"]],
+          ["Back + Biceps", ["Chinups on Power Tower — 4 x 8-AMRAP", "Cross-Body Hammer Curls — 4 x 10-12"]],
+          ["Chest + Triceps", ["Power Tower Dips — 4 x AMRAP", "Dumbbell Skull Crushers — 4 x 10-12"]],
+          ["Chest + Triceps", ["Push-Up Board Explosive Pushups — 4 x 10-15", "Close-Grip Pushups — 4 x AMRAP"]],
+          ["Shoulders + Upper Legs", ["Bench-Elevated Pike Pushups — 4 x 10-15", "Goblet Squats — 4 x 12-15"]],
+          ["Shoulders + Upper Legs", ["Leaning Lateral Raises — 4 x 12-15", "Jump Squats — 4 x 12-15"]],
+          ["Calves/Forearms + Abs", ["Single-Leg Calf Raises — 4 x 15-20", "Power Tower Knee Raises — 4 x 15-20"]],
+          ["Calves/Forearms + Abs", ["Farmer Holds — 4 x 30-45 sec", "Hollow Body Holds — 4 x 30-60 sec"]]
         ],
         cooldown: [
+          "Dead Hangs — 45-60 sec",
           "Shoulder Cross-Body Stretch — 45 sec each side",
           "Child's Pose Lat Stretch — 60 sec",
           "Couch Stretch / Hip Flexor Stretch — 45 sec each side",
-          "Deep Squat Hold — 60 sec",
           "Seated Hamstring Stretch — 45 sec each side",
           "Butterfly Stretch — 60 sec",
-          "Controlled Breathing — 1-2 min"
+          "Deep Breathing — 1 min"
         ]
       },
       {
         title: "DAY 3 — HYPERTROPHY / PUMP",
         supersets: [
-          ["Back and Biceps", ["Slow Eccentric Pullups — 4 x 6-10", "Incline Dumbbell Curls — 4 x 10-12"]],
-          ["Back and Biceps", ["Lat Pulldowns — 4 x 10-12", "Reverse-Grip EZ-Bar Curls — 4 x 10-12"]],
-          ["Chest and Triceps", ["Flat Dumbbell Press — 4 x 10-12", "Rope Tricep Pushdowns — 4 x 12-15"]],
-          ["Chest and Triceps", ["Deficit Pushups — 4 x 12-15", "Bench Dips — 4 x AMRAP"]],
-          ["Shoulders and Upper Legs", ["Arnold Press — 4 x 10-12", "Walking Lunges — 4 x 12-16 steps"]],
-          ["Shoulders and Upper Legs", ["Machine Lateral Raises — 4 x 12-15", "Hamstring Curl Machine — 4 x 10-15"]],
-          ["Lower Legs and Abs", ["Calf Press on Leg Press Machine — 4 x 15-20", "Hanging Leg Raises — 4 x 12-15"]],
-          ["Lower Legs and Abs", ["Reverse Wrist Curls — 4 x 12-15", "Russian Twists with Plate — 4 x 20 total"]]
+          ["Back + Biceps", ["Slow Eccentric Pullups on Power Tower — 4 x 6-10", "Incline Dumbbell Curls — 4 x 10-12"]],
+          ["Back + Biceps", ["Chest-Supported Dumbbell Rows — 4 x 10-12", "Reverse Grip Curls — 4 x 10-12"]],
+          ["Chest + Triceps", ["Flat Dumbbell Press — 4 x 10-12", "Dumbbell Kickbacks — 4 x 12-15"]],
+          ["Chest + Triceps", ["Push-Up Board Deficit Pushups — 4 x 12-15", "Bench Power Tower Dips — 4 x AMRAP"]],
+          ["Shoulders + Upper Legs", ["Arnold Press — 4 x 10-12", "Dumbbell Lunges — 4 x 10-12"]],
+          ["Shoulders + Upper Legs", ["Rear Delt Flyes — 4 x 12-15", "Bench Dumbbell Step-Ups — 4 x 10-12"]],
+          ["Calves/Forearms + Abs", ["Bench-Seated Dumbbell Calf Raises — 4 x 15-20", "Power Tower Leg Raises — 4 x 12-15"]],
+          ["Calves/Forearms + Abs", ["Reverse Wrist Curls — 4 x 12-15", "Stability Ball Russian Twists / Plate Twists — 4 x 20 total"]]
         ],
         cooldown: [
           "Lat Stretch — 45 sec each side",
-          "Pec Stretch — 45 sec each side",
+          "Doorway Chest Stretch — 45 sec each side",
           "Quad Stretch — 45 sec each side",
           "Figure-4 Glute Stretch — 45 sec each side",
           "Hamstring Stretch — 45 sec each side",
-          "Wrist Flexor Stretch — 30 sec each side",
-          "Wrist Extensor Stretch — 30 sec each side"
+          "Wrist Flexor + Extensor Stretch — 30 sec each",
+          "Light Hanging — 45 sec"
         ]
       },
       {
         title: "DAY 4 — HYBRID CHAOS",
         supersets: [
-          ["Back and Biceps", ["Archer Pullups / Assisted Archer Pullups — 4 x 6-10", "Zottman Curls — 4 x 10-12"]],
-          ["Back and Biceps", ["Chest-Supported Row Machine — 4 x 8-12", "Concentration Curls — 4 x 10-12"]],
-          ["Chest and Triceps", ["Feet-Elevated Pushups — 4 x 10-15", "Cable Tricep Pushdowns — 4 x 12-15"]],
-          ["Chest and Triceps", ["Cable Chest Flyes — 4 x 10-15", "Diamond Deficit Pushups — 4 x AMRAP"]],
-          ["Shoulders and Upper Legs", ["Dumbbell Push Press — 4 x 8-12", "Hack Squat / Smith Machine Squat — 4 x 8-12"]],
-          ["Shoulders and Upper Legs", ["Partial Lateral Raise Burnout — 4 x 15-20", "Dumbbell Romanian Deadlifts — 4 x 10-12"]],
-          ["Lower Legs and Abs", ["Explosive Calf Raises — 4 x 20", "Toes-to-Bar / Hanging Leg Raises — 4 x 10-15"]],
-          ["Lower Legs and Abs", ["Farmer Carries — 4 rounds", "Plank — 4 x 45-75 sec"]]
+          ["Back + Biceps", ["Archer Pullups / Assisted Archer Pullups on Power Tower — 4 x 6-10", "Zottman Curls — 4 x 10-12"]],
+          ["Back + Biceps", ["Explosive Dumbbell Rows — 4 x 8-12", "Concentration Curls — 4 x 10-12"]],
+          ["Chest + Triceps", ["Bench Feet-Elevated Push-Up Board Deficit Pushups — 4 x 10-15", "Overhead Band Tricep Extensions — 4 x 12-15"]],
+          ["Chest + Triceps", ["Dumbbell Squeeze Press — 4 x 10-12", "Diamond Deficit Pushups — 4 x AMRAP"]],
+          ["Shoulders + Upper Legs", ["Dumbbell Push Press — 4 x 8-12", "Bulgarian Split Squats — 4 x 10-12"]],
+          ["Shoulders + Upper Legs", ["Partial Lateral Raises Burnout — 4 x 15-20", "Dumbbell Romanian Deadlifts — 4 x 10-12"]],
+          ["Calves/Forearms + Abs", ["Explosive Calf Raises — 4 x 20", "Toes-to-Bar / Power Tower Leg Raises — 4 x 10-15"]],
+          ["Calves/Forearms + Abs", ["Farmer Carries — 4 rounds", "Stability Ball Plank / Stir-the-Pot — 4 x 30-45 sec"]]
         ],
         cooldown: [
-          "Dead Hang — 45-60 sec",
+          "Dead Hangs — 45-60 sec",
           "Cobra Stretch — 45 sec",
           "Child's Pose — 60 sec",
           "Hip Flexor Stretch — 45 sec each side",
           "Deep Squat Hold — 60 sec",
           "Shoulder Wall Stretch — 45 sec each side",
-          "Controlled Breathing — 1-2 min"
+          "Controlled Breathing — 1 min"
         ]
       },
       {
         title: "DAY 5 — STRENGTH OVERDRIVE",
         supersets: [
-          ["Back and Biceps", ["Weighted Chinups / Heavy Assisted Chinups — 5 x 5-8", "Heavy Dumbbell Curls — 5 x 6-10"]],
-          ["Back and Biceps", ["Heavy Seated Cable Rows — 5 x 6-10", "Hammer Curl Holds — 5 x 20-30 sec"]],
-          ["Chest and Triceps", ["Weighted Dips / Heavy Assisted Dips — 5 x 5-8", "Heavy Rope Pushdowns — 5 x 8-10"]],
-          ["Chest and Triceps", ["Heavy Incline Dumbbell Press — 5 x 5-8", "Close-Grip Deficit Pushups — 5 x AMRAP"]],
-          ["Shoulders and Upper Legs", ["Heavy Dumbbell Shoulder Press — 5 x 6-10", "Leg Press — 5 x 8-12"]],
-          ["Shoulders and Upper Legs", ["Cable High Pulls — 5 x 10-12", "Romanian Deadlifts — 5 x 8-10"]],
-          ["Lower Legs and Abs", ["Weighted Standing Calf Raises — 5 x 15-20", "Hanging Windshield Wipers — 5 x 8-12"]],
-          ["Lower Legs and Abs", ["Wrist Roller / Dumbbell Wrist Curls — 5 rounds", "Weighted Plank — 5 x 45-60 sec"]]
+          ["Back + Biceps", ["Paused Chinups on Power Tower — 5 x 8-10", "Heavy Dumbbell Curls — 5 x 6-10"]],
+          ["Back + Biceps", ["Pendlay Dumbbell Rows — 5 x 6-10", "Hammer Curl Holds — 5 x 20-30 sec"]],
+          ["Chest + Triceps", ["Heavy Incline Dumbbell Press — 5 x 5-8", "Heavy Skull Crushers — 5 x 8-10"]],
+          ["Chest + Triceps", ["Weighted Push-Up Board Pushups — 5 x 8-12", "Close-Grip Deficit Pushups — 5 x AMRAP"]],
+          ["Shoulders + Upper Legs", ["Heavy Dumbbell Shoulder Press — 5 x 6-10", "Heavy Goblet Squats — 5 x 8-12"]],
+          ["Shoulders + Upper Legs", ["Upright Rows — 5 x 10-12", "Romanian Deadlifts — 5 x 8-10"]],
+          ["Calves/Forearms + Abs", ["Weighted Calf Raises — 5 x 15-20", "Power Tower Windshield Wipers — 5 x 8-12"]],
+          ["Calves/Forearms + Abs", ["Wrist Roller / Wrist Curls — 5 rounds", "Weighted Plank / Stability Ball Plank — 5 x 45-60 sec"]]
         ],
         cooldown: [
           "Deep Lat Stretch — 45 sec each side",
@@ -298,36 +276,36 @@
       {
         title: "DAY 6 — V-TAPER FORGE",
         supersets: [
-          ["Back and Biceps", ["Wide Neutral-Grip Pullups — 4 x 8-12", "Bayesian Cable Curls — 4 x 10-12"]],
-          ["Back and Biceps", ["Single-Arm Cable Lat Rows — 4 x 10-12", "Reverse Dumbbell Curls — 4 x 10-12"]],
-          ["Chest and Triceps", ["Incline Dumbbell Press — 4 x 8-12", "Cable Overhead Tricep Extensions — 4 x 10-12"]],
-          ["Chest and Triceps", ["Ring Pushups / Handle Pushups — 4 x 12-15", "Machine Chest Press — 4 x 10-12"]],
-          ["Shoulders and Upper Legs", ["Lean-Away Cable Lateral Raises — 4 x 12-15", "Dumbbell Front Squats — 4 x 10-12"]],
-          ["Shoulders and Upper Legs", ["Rear Delt Rows — 4 x 12-15", "Walking Lunges — 4 x 12-16 steps"]],
-          ["Lower Legs and Abs", ["Single-Leg Weighted Calf Raises — 4 x 15-20", "Hanging Straight-Leg Raises — 4 x 10-15"]],
-          ["Lower Legs and Abs", ["Dumbbell Finger Curls — 4 x 12-15", "Side Plank Holds — 4 x 30-45 sec each side"]]
+          ["Back + Biceps", ["Wide Neutral-Grip Pullups on Power Tower — 4 x 8-12", "Bayesian Band Curls — 4 x 10-12"]],
+          ["Back + Biceps", ["One-Arm Lat-Focused Dumbbell Rows — 4 x 10-12", "Reverse Dumbbell Curls — 4 x 10-12"]],
+          ["Chest + Triceps", ["Incline Dumbbell Fly Press — 4 x 10-12", "Dumbbell Tate Press — 4 x 10-12"]],
+          ["Chest + Triceps", ["Push-Up Board Handle Pushups — 4 x 12-15", "Bench Diamond Power Tower Dips — 4 x AMRAP"]],
+          ["Shoulders + Upper Legs", ["Lean-Away Lateral Raises — 4 x 12-15", "Dumbbell Front Squats — 4 x 10-12"]],
+          ["Shoulders + Upper Legs", ["Rear Delt Rows — 4 x 12-15", "Walking Lunges — 4 x 12-16 steps"]],
+          ["Calves/Forearms + Abs", ["Single-Leg Weighted Calf Raises — 4 x 15-20", "Power Tower Straight-Leg Raises — 4 x 10-15"]],
+          ["Calves/Forearms + Abs", ["Dumbbell Finger Curls — 4 x 12-15", "Side Plank Holds / Stability Ball Side Holds — 4 x 30-45 sec each side"]]
         ],
         cooldown: [
-          "Dead Hang — 45-60 sec",
+          "Dead Hangs — 45-60 sec",
           "Thoracic Extension Stretch — 60 sec",
           "Lat Stretch — 45 sec each side",
           "Hip Flexor Stretch — 45 sec each side",
-          "Figure-4 Stretch — 45 sec each side",
+          "Pigeon Stretch / Figure-4 Stretch — 45 sec each side",
           "Calf Stretch — 45 sec each side",
-          "Neck and Trap Stretch — 30 sec each side"
+          "Neck + Trap Stretch — 30 sec each side"
         ]
       },
       {
         title: "DAY 7 — CALISTHENICS WARPATH",
         supersets: [
-          ["Back and Biceps", ["Typewriter Pullups / Assisted Typewriters — 4 x 6-10", "Alternating Hammer Curls — 4 x 10-12"]],
-          ["Back and Biceps", ["Towel Grip Chinups / Rope Grip Pulldowns — 4 x 8-AMRAP", "Slow Eccentric Dumbbell Curls — 4 x 10-12"]],
-          ["Chest and Triceps", ["Archer Pushups / Assisted Archer Pushups — 4 x 8-12", "Dumbbell Skull Crushers — 4 x 10-12"]],
-          ["Chest and Triceps", ["Clap Pushups / Explosive Pushups — 4 x 8-15", "Cable Tricep Pushdowns — 4 x 12-15"]],
-          ["Shoulders and Upper Legs", ["Elevated Pike Pushups — 4 x 8-12", "Dumbbell Jump Squats — 4 x 10-15"]],
-          ["Shoulders and Upper Legs", ["Cable Lateral Raise Dropset — 4 rounds", "Bulgarian Split Squats — 4 x 10-12 each leg"]],
-          ["Lower Legs and Abs", ["Explosive Single-Leg Calf Raises — 4 x 15-20", "Toes-to-Bar / Hanging Raises — 4 x 10-15"]],
-          ["Lower Legs and Abs", ["Towel Farmer Holds — 4 x 30-45 sec", "Hollow Rocks — 4 x 20-30 sec"]]
+          ["Back + Biceps", ["Typewriter Pullups / Assisted Typewriters on Power Tower — 4 x 6-10", "Alternating Hammer Curls — 4 x 10-12"]],
+          ["Back + Biceps", ["Towel Grip Chinups on Power Tower — 4 x 8-AMRAP", "Slow Eccentric Curls — 4 x 10-12"]],
+          ["Chest + Triceps", ["Push-Up Board Archer Pushups / Assisted Archer Pushups — 4 x 8-12", "Dumbbell Skull Crushers — 4 x 10-12"]],
+          ["Chest + Triceps", ["Push-Up Board Explosive Pushups — 4 x 8-15", "Tight-Grip Pushups — 4 x AMRAP"]],
+          ["Shoulders + Upper Legs", ["Bench-Elevated Pike Pushups — 4 x 8-12", "Dumbbell Jump Squats — 4 x 10-15"]],
+          ["Shoulders + Upper Legs", ["Dumbbell Lateral Raise Dropset — 4 rounds", "Bulgarian Split Squats — 4 x 10-12"]],
+          ["Calves/Forearms + Abs", ["Explosive Single-Leg Calf Raises — 4 x 15-20", "Toes-to-Bar / Power Tower Raises — 4 x 10-15"]],
+          ["Calves/Forearms + Abs", ["Towel Farmer Holds — 4 x 30-45 sec", "Hollow Rocks / Stability Ball Knee Tucks — 4 x 20-30 sec"]]
         ],
         cooldown: [
           "Wrist Mobility Stretch — 60 sec",
@@ -342,17 +320,17 @@
       {
         title: "DAY 8 — TITAN REFINEMENT",
         supersets: [
-          ["Back and Biceps", ["Close-Grip Pullups — 4 x 8-12", "Spider Curls / Preacher Curls — 4 x 10-12"]],
-          ["Back and Biceps", ["Meadows Row / T-Bar Row Machine — 4 x 10-12", "Cross-Body Dumbbell Curls — 4 x 10-12"]],
-          ["Chest and Triceps", ["Incline Dumbbell Press, Slow Eccentric — 4 x 8-12", "JM Press / Close-Grip Smith Press — 4 x 8-12"]],
-          ["Chest and Triceps", ["Deep Deficit Pushups — 4 x 12-15", "Overhead Cable Extensions — 4 x 10-12"]],
-          ["Shoulders and Upper Legs", ["Arnold Press — 4 x 10-12", "Heel-Elevated Goblet Squats — 4 x 10-15"]],
-          ["Shoulders and Upper Legs", ["Cable Rear Delt Flyes — 4 x 12-15", "Lying Hamstring Curls — 4 x 10-15"]],
-          ["Lower Legs and Abs", ["Standing Weighted Calf Raises — 4 x 15-20", "Hanging Knee-to-Elbow Raises — 4 x 12-15"]],
-          ["Lower Legs and Abs", ["Reverse Wrist Curls + Wrist Rotations — 4 x 12-15", "Weighted Situps / Decline Situps — 4 x 12-15"]]
+          ["Back + Biceps", ["Close-Grip Pullups on Power Tower — 4 x 8-12", "Spider Curls — 4 x 10-12"]],
+          ["Back + Biceps", ["Meadows Dumbbell Rows — 4 x 10-12", "Cross-Body Dumbbell Curls — 4 x 10-12"]],
+          ["Chest + Triceps", ["Incline Dumbbell Press (slow eccentric) — 4 x 8-12", "JM Press — 4 x 8-12"]],
+          ["Chest + Triceps", ["Deep Push-Up Board Deficit Pushups — 4 x 12-15", "Overhead Dumbbell Extensions — 4 x 10-12"]],
+          ["Shoulders + Upper Legs", ["Arnold Press — 4 x 10-12", "Heel-Elevated Goblet Squats — 4 x 10-15"]],
+          ["Shoulders + Upper Legs", ["Rear Delt Flyes — 4 x 12-15", "Dumbbell Romanian Deadlifts — 4 x 10-12"]],
+          ["Calves/Forearms + Abs", ["Standing Weighted Calf Raises — 4 x 15-20", "Power Tower Knee-to-Elbow Raises — 4 x 12-15"]],
+          ["Calves/Forearms + Abs", ["Reverse Wrist Curls + Wrist Rotations — 4 x 12-15", "Decline Bench Weighted Situps / Ab Roller Rollouts — 4 x 10-15"]]
         ],
         cooldown: [
-          "Dead Hang — 45-60 sec",
+          "Dead Hangs — 45-60 sec",
           "Pec Stretch — 45 sec each side",
           "Hamstring Stretch — 45 sec each side",
           "Hip Flexor Stretch — 45 sec each side",
@@ -379,13 +357,7 @@
       section.innerHTML = `
         <h2 class="day-title">${workout.title}</h2>
 
-        <div class="block">
-          <h3>Cardio First</h3>
-          <ul>${cardio.map(item => `<li>${item}</li>`).join("")}</ul>
-          <p class="note">Goal: conditioning and fat loss without killing strength.</p>
-        </div>
-
-        <div class="block">
+        <div class="cooldown">
           <h3>Warmup</h3>
           <ul>${warmup.map(item => `<li>${item}</li>`).join("")}</ul>
         </div>
@@ -406,15 +378,9 @@
             </div>
           </details>
         `).join("")}
-
-        <div class="block">
+        <div class="cooldown">
           <h3>Cooldown</h3>
           <ul>${workout.cooldown.map(item => `<li>${item}</li>`).join("")}</ul>
-        </div>
-
-        <div class="block">
-          <h3>Program Rules</h3>
-          <ul>${rules.map(item => `<li>${item}</li>`).join("")}</ul>
         </div>
       `;
 
