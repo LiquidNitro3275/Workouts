@@ -142,29 +142,28 @@
 <body>
   <header>
     <h1>8-Day Home Warrior Program</h1>
-    <p class="subtitle">Full Body • Calisthenics • Power Tower / Bench / Dumbbells Focus</p>
+    <p class="subtitle">Full Body • Calisthenics • Day-Specific Cardio Warmups + Finishers</p>
   </header>
 
   <nav class="tabs" id="tabs"></nav>
   <main id="app"></main>
 
   <script>
-    const warmup = [
-      "Foam Roller Upper Back + Lats — 60 sec",
-      "Foam Roller Quads + Hamstrings — 60 sec",
-      "Band Pull-Aparts — 2 x 20",
-      "Band Shoulder Dislocates — 2 x 12",
-      "Scapular Pullups on Power Tower — 2 x 8",
-      "Dip Bar Support Holds — 2 x 20-30 sec",
-      "Push-Up Board Slow Pushups — 2 x 8-10",
-      "Bench Step-Ups — 1 x 10 each leg",
-      "Empty-Bar Hip Hinges / Good Mornings — 1 x 15",
-      "Stability Ball Dead Bugs — 1 x 10 each side"
-    ];
-
     const workouts = [
       {
         title: "DAY 1 — POWER AESTHETIC",
+        warmup: [
+          "Foam Roller Upper Back + Lats — 60 sec",
+          "Power March / High Knees — 60 sec",
+          "Jumping Jacks — 45 sec",
+          "Mountain Climbers — 30 sec",
+          "Rest — 30 sec",
+          "Repeat Cardio Circuit — 3 rounds total",
+          "Band Pull-Aparts — 2 x 20",
+          "Scapular Pullups on Power Tower — 2 x 8",
+          "Push-Up Board Slow Pushups — 2 x 8-10",
+          "Bench Step-Ups — 1 x 10 each leg"
+        ],
         supersets: [
           ["Back + Biceps", ["Slow Tempo Pullups on Power Tower — 4 x 8-12", "Dumbbell Curls — 4 x 8-12"]],
           ["Back + Biceps", ["Heavy One-Arm Dumbbell Rows — 4 x 8-12", "Hammer Curls — 4 x 10-12"]],
@@ -176,17 +175,32 @@
           ["Calves/Forearms + Abs", ["Wrist Curls + Reverse Wrist Curls — 4 x 12-15", "Ab Roller Rollouts — 4 x 8-12"]]
         ],
         cooldown: [
+          "Cardio Finisher: Bench Step-Ups — 45 sec",
+          "Cardio Finisher: Fast Shadow Boxing — 45 sec",
+          "Cardio Finisher: Mountain Climbers — 30 sec",
+          "Rest — 30 sec, then repeat 2-3 rounds",
           "Dead Hangs — 45-60 sec",
           "Doorway Chest Stretch — 45 sec each side",
           "Lat Stretch — 45 sec each side",
           "Hip Flexor Stretch — 45 sec each side",
           "Hamstring Stretch — 45 sec each side",
-          "Calf Stretch — 45 sec each side",
           "Deep Breathing — 1 min"
         ]
       },
       {
         title: "DAY 2 — CALISTHENICS DOMINANCE",
+        warmup: [
+          "Foam Roller Quads + Calves — 60 sec",
+          "Burpee to Controlled Stand — 6 reps",
+          "Fast Feet in Place — 30 sec",
+          "Bench Toe Taps — 40 sec",
+          "Squat Pulses — 30 sec",
+          "Rest — 30 sec",
+          "Repeat Cardio Circuit — 3 rounds total",
+          "Band Shoulder Dislocates — 2 x 12",
+          "Dip Bar Support Holds — 2 x 20-30 sec",
+          "Scapular Pullups — 2 x 8"
+        ],
         supersets: [
           ["Back + Biceps", ["Wide Grip Pullups on Power Tower — 4 x 8-AMRAP", "Alternating Dumbbell Curls — 4 x 10-12"]],
           ["Back + Biceps", ["Chinups on Power Tower — 4 x 8-AMRAP", "Cross-Body Hammer Curls — 4 x 10-12"]],
@@ -198,17 +212,31 @@
           ["Calves/Forearms + Abs", ["Farmer Holds — 4 x 30-45 sec", "Hollow Body Holds — 4 x 30-60 sec"]]
         ],
         cooldown: [
-          "Dead Hangs — 45-60 sec",
+          "Cardio Finisher: Burpees — 8 reps",
+          "Cardio Finisher: High Knees — 30 sec",
+          "Cardio Finisher: Pushup to Shoulder Tap — 10 reps",
+          "Rest — 45 sec, then repeat 2-3 rounds",
           "Shoulder Cross-Body Stretch — 45 sec each side",
           "Child's Pose Lat Stretch — 60 sec",
           "Couch Stretch / Hip Flexor Stretch — 45 sec each side",
-          "Seated Hamstring Stretch — 45 sec each side",
-          "Butterfly Stretch — 60 sec",
-          "Deep Breathing — 1 min"
+          "Deep Squat Hold — 60 sec",
+          "Controlled Breathing — 1 min"
         ]
       },
       {
         title: "DAY 3 — HYPERTROPHY / PUMP",
+        warmup: [
+          "Foam Roller Upper Back + Chest Opener — 60 sec",
+          "Low-Impact Fast Step-Ups on Bench — 45 sec",
+          "Shadow Boxing — 45 sec",
+          "Plank Jacks — 30 sec",
+          "Bodyweight Squats — 20 reps",
+          "Rest — 30 sec",
+          "Repeat Cardio Circuit — 3 rounds total",
+          "Band Pull-Aparts — 2 x 20",
+          "Light Dumbbell Press — 1 x 15",
+          "Incline Pushups on Bench — 1 x 12"
+        ],
         supersets: [
           ["Back + Biceps", ["Slow Eccentric Pullups on Power Tower — 4 x 6-10", "Incline Dumbbell Curls — 4 x 10-12"]],
           ["Back + Biceps", ["Chest-Supported Dumbbell Rows — 4 x 10-12", "Reverse Grip Curls — 4 x 10-12"]],
@@ -220,17 +248,31 @@
           ["Calves/Forearms + Abs", ["Reverse Wrist Curls — 4 x 12-15", "Stability Ball Russian Twists / Plate Twists — 4 x 20 total"]]
         ],
         cooldown: [
+          "Cardio Finisher: Step-Up Sprint Pace — 40 sec",
+          "Cardio Finisher: Mountain Climbers — 30 sec",
+          "Cardio Finisher: Jumping Jacks — 40 sec",
+          "Rest — 40 sec, then repeat 2 rounds",
           "Lat Stretch — 45 sec each side",
           "Doorway Chest Stretch — 45 sec each side",
           "Quad Stretch — 45 sec each side",
           "Figure-4 Glute Stretch — 45 sec each side",
-          "Hamstring Stretch — 45 sec each side",
-          "Wrist Flexor + Extensor Stretch — 30 sec each",
-          "Light Hanging — 45 sec"
+          "Wrist Flexor + Extensor Stretch — 30 sec each"
         ]
       },
       {
         title: "DAY 4 — HYBRID CHAOS",
+        warmup: [
+          "Foam Roller Full Back + Glutes — 90 sec",
+          "Chaos Cardio: Burpees — 6 reps",
+          "Chaos Cardio: Bench Lateral Step-Overs — 30 sec",
+          "Chaos Cardio: Mountain Climbers — 30 sec",
+          "Chaos Cardio: Jump Squats — 8 reps",
+          "Rest — 45 sec",
+          "Repeat Cardio Circuit — 3 rounds total",
+          "Band Face Pulls — 2 x 15",
+          "Scapular Pullups — 2 x 8",
+          "Empty-Bar Good Mornings — 1 x 15"
+        ],
         supersets: [
           ["Back + Biceps", ["Archer Pullups / Assisted Archer Pullups on Power Tower — 4 x 6-10", "Zottman Curls — 4 x 10-12"]],
           ["Back + Biceps", ["Explosive Dumbbell Rows — 4 x 8-12", "Concentration Curls — 4 x 10-12"]],
@@ -242,17 +284,32 @@
           ["Calves/Forearms + Abs", ["Farmer Carries — 4 rounds", "Stability Ball Plank / Stir-the-Pot — 4 x 30-45 sec"]]
         ],
         cooldown: [
+          "Cardio Finisher: EMOM 5 min — Minute 1: 10 Burpees",
+          "Minute 2: 40 sec Fast Feet",
+          "Minute 3: 12 Jump Squats",
+          "Minute 4: 40 sec Shadow Boxing",
+          "Minute 5: 30 sec Mountain Climbers",
           "Dead Hangs — 45-60 sec",
           "Cobra Stretch — 45 sec",
           "Child's Pose — 60 sec",
           "Hip Flexor Stretch — 45 sec each side",
-          "Deep Squat Hold — 60 sec",
-          "Shoulder Wall Stretch — 45 sec each side",
           "Controlled Breathing — 1 min"
         ]
       },
       {
         title: "DAY 5 — STRENGTH OVERDRIVE",
+        warmup: [
+          "Foam Roller Hamstrings + Lats — 90 sec",
+          "Power Step-Ups on Bench — 10 each leg",
+          "Bear Crawl Forward/Back — 30 sec",
+          "High Knees — 30 sec",
+          "Squat to Calf Raise — 15 reps",
+          "Rest — 45 sec",
+          "Repeat Cardio Circuit — 3 rounds total",
+          "Empty-Bar Romanian Deadlift — 1 x 15",
+          "Scapular Pullups — 2 x 6-8",
+          "Push-Up Board Warmup Pushups — 1 x 12"
+        ],
         supersets: [
           ["Back + Biceps", ["Paused Chinups on Power Tower — 5 x 8-10", "Heavy Dumbbell Curls — 5 x 6-10"]],
           ["Back + Biceps", ["Pendlay Dumbbell Rows — 5 x 6-10", "Hammer Curl Holds — 5 x 20-30 sec"]],
@@ -264,17 +321,32 @@
           ["Calves/Forearms + Abs", ["Wrist Roller / Wrist Curls — 5 rounds", "Weighted Plank / Stability Ball Plank — 5 x 45-60 sec"]]
         ],
         cooldown: [
+          "Cardio Finisher: Farmer Carry March — 45 sec",
+          "Cardio Finisher: Bench Step-Ups — 45 sec",
+          "Cardio Finisher: Shadow Boxing — 45 sec",
+          "Rest — 45 sec, then repeat 2 rounds",
           "Deep Lat Stretch — 45 sec each side",
           "Doorway Pec Stretch — 45 sec each side",
           "Hamstring Stretch — 45 sec each side",
           "Quad Stretch — 45 sec each side",
           "Calf Stretch — 45 sec each side",
-          "Forearm Stretch — 30 sec each side",
           "Controlled Breathing — 1-2 min"
         ]
       },
       {
         title: "DAY 6 — V-TAPER FORGE",
+        warmup: [
+          "Foam Roller Upper Back + Thoracic Extension — 90 sec",
+          "Shadow Boxing with Fast Footwork — 45 sec",
+          "Jumping Jacks — 45 sec",
+          "Bench Incline Mountain Climbers — 35 sec",
+          "Bodyweight Reverse Lunges — 10 each leg",
+          "Rest — 30 sec",
+          "Repeat Cardio Circuit — 3 rounds total",
+          "Band Straight-Arm Pulldowns — 2 x 15",
+          "Band Pull-Aparts — 2 x 20",
+          "Dead Hang — 30 sec"
+        ],
         supersets: [
           ["Back + Biceps", ["Wide Neutral-Grip Pullups on Power Tower — 4 x 8-12", "Bayesian Band Curls — 4 x 10-12"]],
           ["Back + Biceps", ["One-Arm Lat-Focused Dumbbell Rows — 4 x 10-12", "Reverse Dumbbell Curls — 4 x 10-12"]],
@@ -286,17 +358,32 @@
           ["Calves/Forearms + Abs", ["Dumbbell Finger Curls — 4 x 12-15", "Side Plank Holds / Stability Ball Side Holds — 4 x 30-45 sec each side"]]
         ],
         cooldown: [
-          "Dead Hangs — 45-60 sec",
+          "Cardio Finisher: V-Taper Burner — 30 sec Fast Feet",
+          "Pushup to Down-Dog — 10 reps",
+          "Bench Step-Overs — 40 sec",
+          "Mountain Climbers — 30 sec",
+          "Rest — 40 sec, then repeat 2-3 rounds",
+          "Dead Hang — 45-60 sec",
           "Thoracic Extension Stretch — 60 sec",
           "Lat Stretch — 45 sec each side",
           "Hip Flexor Stretch — 45 sec each side",
-          "Pigeon Stretch / Figure-4 Stretch — 45 sec each side",
-          "Calf Stretch — 45 sec each side",
           "Neck + Trap Stretch — 30 sec each side"
         ]
       },
       {
         title: "DAY 7 — CALISTHENICS WARPATH",
+        warmup: [
+          "Foam Roller Quads + Upper Back — 90 sec",
+          "Warpath Circuit: Burpees — 8 reps",
+          "Warpath Circuit: High Knees — 40 sec",
+          "Warpath Circuit: Plank Jacks — 30 sec",
+          "Warpath Circuit: Jump Lunges / Reverse Lunges — 10 each leg",
+          "Rest — 45 sec",
+          "Repeat Cardio Circuit — 3 rounds total",
+          "Wrist Mobility — 60 sec",
+          "Scapular Pullups — 2 x 8",
+          "Dip Bar Support Hold — 2 x 20 sec"
+        ],
         supersets: [
           ["Back + Biceps", ["Typewriter Pullups / Assisted Typewriters on Power Tower — 4 x 6-10", "Alternating Hammer Curls — 4 x 10-12"]],
           ["Back + Biceps", ["Towel Grip Chinups on Power Tower — 4 x 8-AMRAP", "Slow Eccentric Curls — 4 x 10-12"]],
@@ -308,17 +395,31 @@
           ["Calves/Forearms + Abs", ["Towel Farmer Holds — 4 x 30-45 sec", "Hollow Rocks / Stability Ball Knee Tucks — 4 x 20-30 sec"]]
         ],
         cooldown: [
+          "Cardio Finisher: Tabata 4 min — 20 sec Mountain Climbers / 10 sec Rest",
+          "Alternate with 20 sec High Knees / 10 sec Rest",
+          "Continue until 4 minutes are complete",
           "Wrist Mobility Stretch — 60 sec",
           "Chest Stretch — 45 sec each side",
           "Lat Stretch — 45 sec each side",
           "Deep Hanging — 45-60 sec",
           "Deep Squat Hold — 60 sec",
-          "Butterfly Stretch — 60 sec",
-          "Hamstring Stretch — 45 sec each side"
+          "Butterfly Stretch — 60 sec"
         ]
       },
       {
         title: "DAY 8 — TITAN REFINEMENT",
+        warmup: [
+          "Foam Roller Full Body Reset — 2 min",
+          "Titan Circuit: Bench Step-Ups — 45 sec",
+          "Titan Circuit: Shadow Boxing — 45 sec",
+          "Titan Circuit: Squat Thrusts — 30 sec",
+          "Titan Circuit: Fast Feet — 30 sec",
+          "Rest — 30 sec",
+          "Repeat Cardio Circuit — 3 rounds total",
+          "Band Face Pulls — 2 x 15",
+          "Light Barbell Complex: Row + Press + Squat — 1 x 8 each",
+          "Stability Ball Dead Bugs — 1 x 10 each side"
+        ],
         supersets: [
           ["Back + Biceps", ["Close-Grip Pullups on Power Tower — 4 x 8-12", "Spider Curls — 4 x 10-12"]],
           ["Back + Biceps", ["Meadows Dumbbell Rows — 4 x 10-12", "Cross-Body Dumbbell Curls — 4 x 10-12"]],
@@ -330,12 +431,16 @@
           ["Calves/Forearms + Abs", ["Reverse Wrist Curls + Wrist Rotations — 4 x 12-15", "Decline Bench Weighted Situps / Ab Roller Rollouts — 4 x 10-15"]]
         ],
         cooldown: [
-          "Dead Hangs — 45-60 sec",
+          "Cardio Finisher: Final Burner — 5 rounds",
+          "20 sec Burpees",
+          "20 sec Bench Toe Taps",
+          "20 sec Shadow Boxing",
+          "40 sec Rest after each round",
+          "Dead Hang — 45-60 sec",
           "Pec Stretch — 45 sec each side",
           "Hamstring Stretch — 45 sec each side",
           "Hip Flexor Stretch — 45 sec each side",
           "Spinal Twist — 45 sec each side",
-          "Calf Stretch — 45 sec each side",
           "Breathing Cooldown — 1-2 min"
         ]
       }
@@ -358,8 +463,8 @@
         <h2 class="day-title">${workout.title}</h2>
 
         <div class="cooldown">
-          <h3>Warmup</h3>
-          <ul>${warmup.map(item => `<li>${item}</li>`).join("")}</ul>
+          <h3>Warmup + Cardio Primer</h3>
+          <ul>${workout.warmup.map(item => `<li>${item}</li>`).join("")}</ul>
         </div>
 
         ${workout.supersets.map((superset, supersetIndex) => `
@@ -379,7 +484,7 @@
           </details>
         `).join("")}
         <div class="cooldown">
-          <h3>Cooldown</h3>
+          <h3>Cooldown + Cardio Finisher</h3>
           <ul>${workout.cooldown.map(item => `<li>${item}</li>`).join("")}</ul>
         </div>
       `;
