@@ -3,455 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>8-Day Human Asta Warrior Ritual</title>
+  <title>Human Asta Warrior Ritual</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
-    body { background: #0f1117; color: #f5f5f5; padding: 16px; line-height: 1.5; }
-    header { text-align: center; margin-bottom: 16px; }
-    h1 { font-size: 1.55rem; margin-bottom: 5px; }
-    .subtitle { color: #b8b8b8; font-size: 0.9rem; }
-    .tabs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; position: sticky; top: 0; z-index: 10; background: #0f1117; padding: 10px 0; margin-bottom: 12px; }
-    .tabs button { border: 1px solid #343a52; background: #1c2030; color: white; padding: 10px 4px; border-radius: 12px; font-weight: bold; cursor: pointer; }
-    .tabs button.active { background: #4f7cff; border-color: #4f7cff; }
-    .day { display: none; }
-    .day.active { display: block; }
-    .day-title { font-size: 1.25rem; margin: 14px 0; }
-    details { background: #181b27; border: 1px solid #2b3042; border-radius: 16px; margin-bottom: 12px; overflow: hidden; }
-    summary { background: #202536; padding: 14px; font-weight: bold; cursor: pointer; list-style: none; }
-    summary::-webkit-details-marker { display: none; }
-    .content { padding: 14px; }
-    .exercise { padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #30364a; }
-    .exercise:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-    .exercise-name { font-weight: bold; color: white; }
-    .sets { color: #bfc7ff; font-size: 0.95rem; margin-top: 3px; }
-    .block { background: #111827; border: 1px solid #2d3748; border-radius: 16px; padding: 14px; margin: 16px 0 28px; }
-    .block h3 { margin-bottom: 8px; }
-    .block ul { padding-left: 20px; color: #d5d5d5; }
-    .warning { color: #f5d37a; }
-    .tag { display: inline-block; margin: 4px 4px 0 0; padding: 4px 8px; border-radius: 999px; background: #202536; border: 1px solid #343a52; color: #d5d5d5; font-size: 0.82rem; }
+    :root{--bg:#070707;--panel:#11100d;--panel2:#1b150b;--gold:#d4af37;--gold2:#f3d77a;--gold3:#9d7623;--text:#f8f0da;--muted:#c8b894;--line:rgba(212,175,55,.22);--line2:rgba(212,175,55,.36);--shadow:0 14px 34px rgba(0,0,0,.44)}
+    *{box-sizing:border-box;margin:0;padding:0;font-family:"Trebuchet MS","Segoe UI",Arial,sans-serif}html{scroll-behavior:smooth}body{min-height:100vh;color:var(--text);background:radial-gradient(circle at 12% 14%,rgba(212,175,55,.13),transparent 24%),radial-gradient(circle at 86% 12%,rgba(212,175,55,.08),transparent 20%),linear-gradient(180deg,#0b0906,#060606 45%,#030303);overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.085;background-image:radial-gradient(rgba(255,255,255,.8) .7px,transparent .9px),radial-gradient(rgba(212,175,55,.45) .7px,transparent .9px);background-size:18px 18px,31px 31px;background-position:0 0,9px 12px;z-index:0}.app{position:relative;z-index:1;display:flex;min-height:100vh}.sidebar{width:318px;flex:0 0 318px;height:100vh;position:sticky;top:0;overflow:auto;padding:16px;background:linear-gradient(180deg,rgba(15,12,8,.99),rgba(5,5,5,.99));border-right:1px solid var(--line);box-shadow:var(--shadow)}.brand{display:flex;gap:12px;align-items:center;padding:13px;border:1px solid var(--line2);border-radius:24px;background:linear-gradient(145deg,rgba(28,21,10,.98),rgba(8,8,8,.98));box-shadow:var(--shadow);margin-bottom:13px}.crestBox{width:70px;height:70px;flex:0 0 70px;display:grid;place-items:center;border-radius:22px;border:1px solid rgba(212,175,55,.36);background:radial-gradient(circle at 50% 30%,rgba(212,175,55,.13),transparent 45%),#090806}.crest{width:60px;height:60px;filter:drop-shadow(0 0 8px rgba(212,175,55,.15))}.brand h1{font-size:1.02rem;color:#fff0bf;line-height:1.1;margin-bottom:5px}.brand p,.kicker{font-size:.72rem;color:var(--gold2);letter-spacing:.13em;text-transform:uppercase}.quote,.sideFoot{padding:12px 13px;border:1px solid var(--line);border-radius:18px;background:rgba(212,175,55,.07);color:#eadbb6;font-size:.86rem;line-height:1.55;margin-bottom:13px}.sideTitle{color:var(--gold2);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;margin:15px 8px 9px}.nav{display:grid;gap:8px}.nav button,.dayBtn{border:1px solid var(--line);background:linear-gradient(180deg,rgba(25,20,12,.98),rgba(10,10,9,.98));color:var(--muted);border-radius:16px;padding:13px 14px;text-align:left;cursor:pointer;transition:.18s ease;box-shadow:inset 0 1px 0 rgba(255,255,255,.03)}.nav button:hover,.dayBtn:hover{transform:translateY(-1px);border-color:var(--line2);color:#fff2c7}.nav button.active,.dayBtn.active{background:linear-gradient(180deg,#f3d77a,#cfa432 72%,#9e7724);color:#1b1305;border-color:rgba(255,231,151,.55);box-shadow:0 9px 18px rgba(212,175,55,.16),inset 0 1px 0 rgba(255,255,255,.28)}.navLabel{font-weight:800;font-size:.94rem}.navSub{font-size:.73rem;opacity:.88;margin-top:3px;line-height:1.35}.crestDivider{display:grid;place-items:center;opacity:.86;padding:14px 0 7px}.main{flex:1;min-width:0;padding:18px}.page{display:none;animation:fade .22s ease}.page.active{display:block}@keyframes fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}.hero,.card{border:1px solid var(--line2);border-radius:28px;background:linear-gradient(145deg,rgba(21,16,9,.98),rgba(8,8,8,.98));box-shadow:var(--shadow);overflow:hidden;margin-bottom:16px}.hero{padding:24px 20px;position:relative}.hero:before,.cardHead:before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(212,175,55,.07),transparent),radial-gradient(circle at 87% 18%,rgba(212,175,55,.13),transparent 24%)}.hero>*{position:relative}.badge{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line2);background:rgba(212,175,55,.08);color:var(--gold2);border-radius:999px;padding:7px 12px;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}.hero h2{font-size:clamp(1.8rem,4.5vw,2.8rem);line-height:1.05;color:#fff4ca;margin-bottom:10px}.hero h2 span{color:var(--gold)}.hero p,.cardHead p,.mini li,.mini p,.note{color:var(--muted);line-height:1.65;font-size:.95rem}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}.stat,.mini{border:1px solid var(--line);border-radius:20px;background:linear-gradient(180deg,rgba(25,20,12,.96),rgba(10,10,9,.96));padding:14px}.stat b{display:block;color:var(--gold2);font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px}.stat span{font-size:.9rem;line-height:1.45}.cardHead{position:relative;padding:17px 18px;border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(35,25,11,.98),rgba(12,11,9,.98))}.cardHead>*{position:relative}.cardHead h3{color:#fff0bf;font-size:1.34rem;margin:5px 0 7px}.cardBody{padding:16px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.mini h4,.finisher h4{color:var(--gold2);font-size:.9rem;letter-spacing:.09em;text-transform:uppercase;margin-bottom:10px}.mini ul,.finisher ul{padding-left:18px}.mini li+li{margin-top:5px}.daySelector{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:14px}.dayBtn{text-align:center;font-weight:800}.dayPanel{display:none}.dayPanel.active{display:block}details{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:linear-gradient(180deg,rgba(16,13,10,.98),rgba(9,9,8,.98));margin-bottom:12px}details[open]{border-color:var(--line2)}summary{list-style:none;cursor:pointer;padding:14px 16px;background:linear-gradient(90deg,rgba(37,27,12,.96),rgba(14,12,9,.96));display:flex;justify-content:space-between;gap:12px;color:#fff1c4;font-weight:800}summary::-webkit-details-marker{display:none}.tag{color:var(--gold2);font-size:.73rem}.exWrap{padding:12px 14px 2px}.exercise{padding-bottom:12px;margin-bottom:12px;border-bottom:1px solid rgba(212,175,55,.1)}.exercise:last-child{border-bottom:0;margin-bottom:0}.exName{font-weight:800;color:#fff8df;margin-bottom:5px}.exMeta{color:var(--muted);font-size:.92rem;line-height:1.55}.finisher{border:1px solid var(--line2);border-radius:22px;background:linear-gradient(135deg,rgba(43,30,11,.98),rgba(14,12,9,.98));padding:16px;margin-top:14px}.note{border-left:4px solid var(--gold);background:rgba(212,175,55,.08);border-radius:14px;padding:12px 14px;margin-top:14px}.footer{text-align:center;color:#a99973;font-size:.84rem;padding:10px}.gold{color:var(--gold2);font-weight:800}
+    @media(max-width:980px){.app{display:block}.sidebar{position:relative;top:auto;width:auto;height:auto;overflow:visible;border-right:0;border-bottom:1px solid var(--line);padding:14px}.brand{margin-bottom:10px}.nav{grid-template-columns:repeat(2,minmax(0,1fr))}.sideFoot{display:none}.main{padding:14px}.stats{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.sidebar .crestDivider{display:none}}
+    @media(max-width:560px){.nav{grid-template-columns:1fr}.daySelector{grid-template-columns:repeat(2,1fr)}.hero,.card{border-radius:22px}.hero{padding:19px 15px}.cardBody,.cardHead{padding:14px}.crestBox{width:62px;height:62px;flex-basis:62px}.crest{width:54px;height:54px}}
   </style>
 </head>
 <body>
-  <header>
-    <h1>8-Day Human Asta Warrior Ritual</h1>
-    <p class="subtitle">Bodyweight First • Calisthenics Skill • APT Control • Grip • Explosiveness • Battle Engine</p>
-    <div>
-      <span class="tag">No Weights Required</span>
-      <span class="tag">Bands Only When Useful</span>
-      <span class="tag">Full Body</span>
-      <span class="tag">Anime Warrior Style</span>
-    </div>
-  </header>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="crestBox"><svg class="crest" viewBox="0 0 100 100" aria-label="Black bull skull inspired crest" role="img"><path d="M50 6c-5 4-7 8-8 14-9-6-23-7-34-1 2 14 10 23 23 25-3 7-4 14-2 22 3 14 11 24 21 29 10-5 18-15 21-29 2-8 1-15-2-22 13-2 21-11 23-25-11-6-25-5-34 1-1-6-3-10-8-14Z" fill="#080604" stroke="#f3d77a" stroke-width="5" stroke-linejoin="round"/><path d="M13 24c11-4 21 0 27 8-12-2-21 2-27 12-4-5-5-12 0-20Zm74 0c-11-4-21 0-27 8 12-2 21 2 27 12 4-5 5-12 0-20Z" fill="#f3d77a" opacity=".95"/><path d="M38 28c-4 8-7 20-5 32 2 12 8 21 17 27 9-6 15-15 17-27 2-12-1-24-5-32-8 5-16 5-24 0Z" fill="#1a0f05" stroke="#f3d77a" stroke-width="3"/><path d="M50 30l4 10 11 1-9 7 3 11-9-6-9 6 3-11-9-7 11-1 4-10Z" fill="#f3d77a"/><path d="M39 54c-6 8-8 18-7 28m29-28c6 8 8 18 7 28M50 58v29M42 70l-9 8M58 70l9 8" stroke="#f3d77a" stroke-width="2.4" stroke-linecap="round" opacity=".78"/><path d="M40 72c4 3 16 3 20 0" stroke="#f3d77a" stroke-width="3" stroke-linecap="round"/></svg></div>
+        <div><h1>Human Asta<br>Warrior Ritual</h1><p>Black Bulls Mode</p></div>
+      </div>
+      <div class="quote">No drawer overlay. No screen blocker. This navigation stays tappable on mobile and becomes a true sidebar on wider screens.</div>
+      <div class="sideTitle">Navigation</div>
+      <div class="nav">
+        <button class="active" data-page="mainWorkout"><div class="navLabel">Main Workouts</div><div class="navSub">Warmup • supersets • finisher • cooldown</div></button>
+        <button data-page="ritualRules"><div class="navLabel">Ritual Rules</div><div class="navSub">Training laws</div></button>
+        <button data-page="progressionRules"><div class="navLabel">Progression</div><div class="navSub">How the ritual evolves</div></button>
+        <button data-page="aptMobility"><div class="navLabel">APT + Mobility</div><div class="navSub">Posture and flexibility</div></button>
+        <button data-page="skillGoals"><div class="navLabel">Skill Goals</div><div class="navSub">Muscle-up • flag • toes-to-bar</div></button>
+        <button data-page="systemNotes"><div class="navLabel">System Notes</div><div class="navSub">Recovery and reality</div></button>
+      </div>
+      <div class="crestDivider"><svg width="138" height="44" viewBox="0 0 180 58" aria-hidden="true"><path d="M12 29h48M120 29h48" stroke="#d4af37" stroke-opacity=".35" stroke-width="2"/><path d="M90 5c-4 3-6 6-7 11-8-4-18-5-27-1 2 10 8 17 18 19-2 6-3 12-2 18 2 9 8 15 18 20 10-5 16-11 18-20 1-6 0-12-2-18 10-2 16-9 18-19-9-4-19-3-27 1-1-5-3-8-7-11Z" fill="#090705" stroke="#d4af37" stroke-width="3"/><path d="M90 22l3 7 8 1-6 5 2 8-7-4-7 4 2-8-6-5 8-1 3-7Z" fill="#d4af37"/></svg></div>
+      <div class="sideFoot"><span class="gold">Crest:</span> closer custom black bull skull emblem with gold outline, central star, cracks, and horn shape.</div>
+    </aside>
 
-  <nav class="tabs" id="tabs"></nav>
-  <main id="app"></main>
+    <main class="main">
+      <section class="page active" id="mainWorkout"><div class="hero"><div class="badge">Landing Page • Warrior Program</div><h2><span>Human Asta</span> Main Workouts</h2><p>Bodyweight-first calisthenics forged for a lean warrior build: chest, abs, back, grip, explosiveness, stamina, mobility, and posture. Each day includes warmup, main supersets, warrior finisher, and cooldown.</p><div class="stats"><div class="stat"><b>Build Priority</b><span>Chest • Abs • Back • Grip • Explosiveness</span></div><div class="stat"><b>Training Style</b><span>Bodyweight first. Bands only where truly useful.</span></div><div class="stat"><b>Goal</b><span>Lean anime-viking warrior build.</span></div><div class="stat"><b>Rotation</b><span>8-day flexible cycle.</span></div></div></div><div class="card"><div class="cardHead"><div class="kicker">Workout Rotation</div><h3>Select a Day</h3><p>Pick a day below to view the full ritual.</p></div><div class="cardBody"><div class="daySelector" id="daySelector"></div><div id="dayPanels"></div></div></div></section>
+      <section class="page" id="ritualRules"><InfoCard title="Ritual Rules"></InfoCard></section>
+      <section class="page" id="progressionRules"><InfoCard title="Progression Rules"></InfoCard></section>
+      <section class="page" id="aptMobility"><InfoCard title="APT + Mobility Protocol"></InfoCard></section>
+      <section class="page" id="skillGoals"><InfoCard title="Skill Goals"></InfoCard></section>
+      <section class="page" id="systemNotes"><InfoCard title="System Notes"></InfoCard></section>
+      <div class="footer">Forge the body here. Train the actual art of fighting later.</div>
+    </main>
+  </div>
 
   <script>
-    const workouts = [
-      {
-        title: "DAY 1 — ANTI-MAGIC FOUNDATION",
-        warmup: [
-          "Tiny Full-Body Warmup — 2 rounds only",
-          "Arm Circles — 10 each direction",
-          "Scapular Pushups — 8 reps",
-          "Bodyweight Squats — 10 reps",
-          "Glute Bridges — 10 reps",
-          "Dead Bugs — 8 reps each side",
-          "APT Prep — Posterior Pelvic Tilts — 2 x 10 slow reps",
-          "APT Prep — Half-Kneeling Hip Flexor Stretch with Glute Squeeze — 30 sec each side"
-        ],
-        supersets: [
-          ["Back + Biceps", ["Chinups — 4 x 6-10, leave 1-2 reps in reserve", "Supinated Dead Hang — 4 x 20-40 sec"]],
-          ["Back + Biceps", ["Scapular Pullups — 4 x 8-12", "Self-Resisted Curls — 4 x 12 each arm"]],
-          ["Chest + Triceps", ["Deficit Pushups on Pushup Board — 4 x 10-18", "Bench Dips — 4 x 10-15"]],
-          ["Chest + Triceps", ["Close-Grip Incline Pushups — 4 x 10-15", "Bodyweight Triceps Extensions on Bench — 4 x 8-12"]],
-          ["Shoulders + Upper Legs", ["Pike Pushups — 4 x 10-15", "Bulgarian Split Squats — 4 x 10-14 each leg"]],
-          ["Shoulders + Upper Legs", ["Wall Handstand Lean / Pike Hold — 4 x 20-40 sec", "Single-Leg Glute Bridges — 4 x 10-15 each side"]],
-          ["Calves/Forearms + Abs", ["Single-Leg Calf Raises — 4 x 15-25 each leg", "Power Tower Knee Raises with Posterior Pelvic Tilt — 4 x 10-15"]],
-          ["Calves/Forearms + Abs", ["Wall Tibialis Raises — 4 x 20-30", "Hollow Body Tuck Hold — 4 x 25-45 sec"]]
-        ],
-        finisher: [
-          "Warrior Finisher — 4 rounds",
-          "Shadowboxing — 60 sec",
-          "Bear Crawl — 20-30 sec",
-          "Mountain Climbers — 30 sec",
-          "Rest — 60 sec"
-        ],
-        cooldown: [
-          "Couch Stretch / Hip Flexor Stretch — 60 sec each side",
-          "Figure-4 Glute Stretch — 45 sec each side",
-          "Lat Stretch — 45 sec each side",
-          "Deep Breathing with Ribs Down — 2 min"
-        ]
-      },
-      {
-        title: "DAY 2 — DEMON-SLAYER ENGINE",
-        warmup: [
-          "Tiny Full-Body Warmup — 2 rounds only",
-          "Shoulder Rolls — 10 each direction",
-          "Cat-Cow — 8 slow reps",
-          "Reverse Lunges — 8 each leg",
-          "Scapular Pullups — 6 reps",
-          "Knee Plank — 20 sec",
-          "APT Prep — Dead Bugs — 2 x 8 each side",
-          "APT Prep — Glute Bridge Hold — 2 x 20 sec"
-        ],
-        supersets: [
-          ["Back + Biceps", ["Pullups — 4 x 5-9", "Chinup Top Holds — 4 x 10-20 sec"]],
-          ["Back + Biceps", ["Band Lat Pulldowns — 4 x 15-20, used for extra lat volume", "Self-Resisted Hammer Curls — 4 x 12 each arm"]],
-          ["Chest + Triceps", ["Archer Pushup Progression — 4 x 5-8 each side", "Bench Dips — 4 x 10-15"]],
-          ["Chest + Triceps", ["Pushup Eccentrics — 4 x 6-10", "Close-Grip Pushups from Knees / Incline — 4 x 10-15"]],
-          ["Shoulders + Upper Legs", ["Elevated Pike Pushups — 4 x 8-12", "Step-Ups on Bench — 4 x 12 each leg"]],
-          ["Shoulders + Upper Legs", ["Bear Plank Shoulder Taps — 4 x 12 each side", "Shrimp Squat Progression — 4 x 6-10 each leg"]],
-          ["Calves/Forearms + Abs", ["Towel Dead Hang — 4 x 15-30 sec", "Dead Bugs with Ribs Down — 4 x 10-12 each side"]],
-          ["Calves/Forearms + Abs", ["Calf Raise 1.5 Reps — 4 x 12-20", "Side Plank — 4 x 30-45 sec each side"]]
-        ],
-        finisher: [
-          "Warrior Finisher — 5 rounds",
-          "Fast Shadowboxing — 45 sec",
-          "Sprawls — 6-10 reps",
-          "Fast Step-Ups or Fast March — 45 sec",
-          "Rest — 60-75 sec"
-        ],
-        cooldown: [
-          "Half-Kneeling Hip Flexor Stretch — 60 sec each side",
-          "Hamstring Stretch — 45 sec each side",
-          "Forearm Stretch — 30 sec each side",
-          "Breathing Reset with Lower Back Relaxed — 2 min"
-        ]
-      },
-      {
-        title: "DAY 3 — CHEST AND CORE FORGE",
-        warmup: [
-          "Tiny Full-Body Warmup — 2 rounds only",
-          "Arm Swings — 10 each direction",
-          "Scapular Pushups — 8 reps",
-          "Squat to Reach — 8 reps",
-          "Glute Bridges — 10 reps",
-          "Side Plank from Knees — 15 sec each side",
-          "APT Prep — Posterior Pelvic Tilt Marches — 2 x 8 each side",
-          "APT Prep — Standing Quad / Hip Flexor Stretch — 30 sec each side"
-        ],
-        supersets: [
-          ["Back + Biceps", ["Chinup Negatives — 4 x 4-6 slow reps", "Supinated Hang — 4 x 20-40 sec"]],
-          ["Back + Biceps", ["Archer Pullup Prep / Side-to-Side Pullup Shifts — 4 x 3-5 each side", "Self-Resisted Curl Isometric Hold — 4 x 20 sec each arm"]],
-          ["Chest + Triceps", ["Pseudo Planche Pushup Lean Reps — 4 x 6-10", "Bodyweight Triceps Extensions on Bench — 4 x 8-12"]],
-          ["Chest + Triceps", ["Wide Pushups — 4 x 12-20", "Diamond Incline Pushups — 4 x 8-14"]],
-          ["Shoulders + Upper Legs", ["Pike Pushups — 4 x 10-15", "Reverse Lunges — 4 x 10-14 each leg"]],
-          ["Shoulders + Upper Legs", ["Wall Handstand Hold — 4 x 20-45 sec", "Glute Bridge Marches — 4 x 12 each side"]],
-          ["Calves/Forearms + Abs", ["Single-Leg Calf Raises — 4 x 15-25 each leg", "Power Tower Knee Raises — 4 x 12-18"]],
-          ["Calves/Forearms + Abs", ["Seated Toe Raises — 4 x 20-30", "Plank with Posterior Pelvic Tilt — 4 x 35-60 sec"]]
-        ],
-        finisher: [
-          "Warrior Finisher — 4 rounds",
-          "Pushups — 20 sec",
-          "Squat Pulses — 30 sec",
-          "Shadowboxing — 60 sec",
-          "Rest — 60 sec"
-        ],
-        cooldown: [
-          "Chest Stretch — 60 sec each side",
-          "Couch Stretch — 60 sec each side",
-          "Child's Pose — 60 sec",
-          "Deep Breathing with Abs Lightly Braced — 2 min"
-        ]
-      },
-      {
-        title: "DAY 4 — BEAST LEGS AND BALANCE",
-        warmup: [
-          "Tiny Full-Body Warmup — 2 rounds only",
-          "March in Place — 30 sec",
-          "Arm Circles — 10 each direction",
-          "Bodyweight Squats — 10 reps",
-          "Glute Bridges — 10 reps",
-          "Scapular Pullups — 6 reps",
-          "APT Prep — Dead Bugs — 2 x 8 each side",
-          "APT Prep — Hip Flexor Stretch with Glute Squeeze — 30 sec each side"
-        ],
-        supersets: [
-          ["Back + Biceps", ["Assisted Archer Pullup Progression — 4 x 3-6 each side", "Self-Resisted Curls — 4 x 12 each arm"]],
-          ["Back + Biceps", ["Prone Y-T-W Raises — 4 x 8 each pattern", "Supinated Dead Hang — 4 x 20-40 sec"]],
-          ["Chest + Triceps", ["Incline Pushups — 4 x 15-25", "Close-Grip Incline Pushups — 4 x 10-15"]],
-          ["Chest + Triceps", ["Pushup Bottom Holds — 4 x 10-20 sec", "Bench Dips — 4 x 10-15"]],
-          ["Shoulders + Upper Legs", ["Pike Pushups — 4 x 8-12", "Pistol Squat Progression — 4 x 5-8 each leg"]],
-          ["Shoulders + Upper Legs", ["Bear Plank Shoulder Taps — 4 x 12 each side", "Bulgarian Split Squats — 4 x 10-15 each leg"]],
-          ["Calves/Forearms + Abs", ["Calf Raises Slow Tempo — 4 x 20-30", "Reverse Crunches with Posterior Pelvic Tilt — 4 x 12-18"]],
-          ["Calves/Forearms + Abs", ["Tibialis Wall Raises — 4 x 20-30", "Hollow Body Tuck Rocks — 4 x 10-20"]]
-        ],
-        finisher: [
-          "Warrior Finisher — 5 rounds",
-          "Lateral Footwork Shuffle — 30 sec",
-          "Burpees — 6-10 reps",
-          "Bear Crawl — 20 sec",
-          "Rest — 75 sec"
-        ],
-        cooldown: [
-          "Quad Stretch — 45 sec each side",
-          "Hip Flexor Stretch — 60 sec each side",
-          "Calf Stretch — 45 sec each side",
-          "Breathing Reset — 2 min"
-        ]
-      },
-      {
-        title: "DAY 5 — BLACK BULL STRENGTH",
-        warmup: [
-          "Tiny Full-Body Warmup — 2 rounds only",
-          "Shoulder Rolls — 10 each direction",
-          "Scapular Pushups — 8 reps",
-          "Bodyweight Squats — 10 reps",
-          "Dead Bugs — 8 reps each side",
-          "Glute Bridge Hold — 20 sec",
-          "APT Prep — Posterior Pelvic Tilt Holds — 2 x 20 sec",
-          "APT Prep — Couch Stretch — 30 sec each side"
-        ],
-        supersets: [
-          ["Back + Biceps", ["Paused Chinups — 4 x 5-8", "Chinup Midpoint Holds — 4 x 8-15 sec"]],
-          ["Back + Biceps", ["Towel Pullup / Towel Chinup Progression — 4 x 3-6", "Self-Resisted Curls — 4 x 12 each arm"]],
-          ["Chest + Triceps", ["Decline Pushups — 4 x 8-15", "Bench Dips — 4 x 10-15"]],
-          ["Chest + Triceps", ["Archer Pushups — 4 x 5-8 each side", "Bodyweight Triceps Extensions on Bench — 4 x 8-12"]],
-          ["Shoulders + Upper Legs", ["Elevated Pike Pushups — 4 x 8-12", "Reverse Lunges — 4 x 12 each leg"]],
-          ["Shoulders + Upper Legs", ["Wall Walk Partial Reps — 4 x 3-6", "Single-Leg Glute Bridges — 4 x 12-15 each side"]],
-          ["Calves/Forearms + Abs", ["Single-Leg Calf Raises — 4 x 18-25 each leg", "Hanging Knee Raises — 4 x 12-18"]],
-          ["Calves/Forearms + Abs", ["Wall Tibialis Raises — 4 x 20-30", "Hollow Body Hold — 4 x 30-60 sec"]]
-        ],
-        finisher: [
-          "Warrior Finisher — 4 rounds",
-          "Shadowboxing — 90 sec",
-          "Sprawls — 8 reps",
-          "Mountain Climbers — 40 sec",
-          "Rest — 75 sec"
-        ],
-        cooldown: [
-          "Lat Stretch — 60 sec each side",
-          "Hip Flexor Stretch — 60 sec each side",
-          "Glute Stretch — 45 sec each side",
-          "Deep Breathing with Ribs Down — 2 min"
-        ]
-      },
-      {
-        title: "DAY 6 — SPEED AND REACTION RITUAL",
-        warmup: [
-          "Tiny Full-Body Warmup — 2 rounds only",
-          "March in Place — 30 sec",
-          "Cat-Cow — 8 reps",
-          "Incline Pushups — 8 reps",
-          "Bodyweight Squats — 10 reps",
-          "Dead Bugs — 8 each side",
-          "APT Prep — Glute Bridges — 2 x 12 reps",
-          "APT Prep — Half-Kneeling Hip Flexor Stretch — 30 sec each side"
-        ],
-        supersets: [
-          ["Back + Biceps", ["Pullup Negatives — 4 x 4-6", "Supinated Dead Hang — 4 x 20-40 sec"]],
-          ["Back + Biceps", ["Band Face Pulls — 4 x 15-20, used for traps/rear delts/posture", "Self-Resisted Hammer Curls — 4 x 12 each arm"]],
-          ["Chest + Triceps", ["Tempo Pushups — 4 x 10-15", "Close-Grip Pushups from Knees / Incline — 4 x 10-15"]],
-          ["Chest + Triceps", ["Pushup Shoulder Taps — 4 x 12 each side", "Bench Dips — 4 x 10-15"]],
-          ["Shoulders + Upper Legs", ["Pike Pushups — 4 x 8-12", "Step-Ups — 4 x 12 each leg"]],
-          ["Shoulders + Upper Legs", ["Wall Handstand Lean / Pike Hold — 4 x 20-40 sec", "Bodyweight Squat Pulses — 4 x 20-30"]],
-          ["Calves/Forearms + Abs", ["Calf Raise 1.5 Reps — 4 x 15-25", "Dead Bugs with Posterior Pelvic Tilt — 4 x 10-12 each side"]],
-          ["Calves/Forearms + Abs", ["Towel Hang / Mixed Grip Hang — 4 x 15-30 sec", "Side Plank with Top-Leg Raise Optional — 4 x 25-40 sec each side"]]
-        ],
-        finisher: [
-          "Reaction Finisher — 6 rounds",
-          "Shadowboxing with Defense Slips — 45 sec",
-          "Fast Feet in Place — 20 sec",
-          "Sprawl or Drop-Step — 3-5 reps",
-          "Rest — 45-60 sec"
-        ],
-        cooldown: [
-          "Chest Stretch — 45 sec each side",
-          "Couch Stretch — 60 sec each side",
-          "Calf Stretch — 45 sec each side",
-          "Breathing Reset — 2 min"
-        ]
-      },
-      {
-        title: "DAY 7 — ARMOR, GRIP, AND POSTURE",
-        warmup: [
-          "Tiny Full-Body Warmup — 2 rounds only",
-          "Arm Circles — 10 each direction",
-          "Scapular Pullups — 6 reps",
-          "Bodyweight Squats — 10 reps",
-          "Glute Bridges — 10 reps",
-          "Knee Plank — 20 sec",
-          "APT Prep — Posterior Pelvic Tilt Marches — 2 x 8 each side",
-          "APT Prep — Hip Flexor Stretch — 30 sec each side"
-        ],
-        supersets: [
-          ["Back + Biceps", ["Chinup Negatives — 4 x 4-6", "Self-Resisted Curls — 4 x 12 each arm"]],
-          ["Back + Biceps", ["Scapular Pullups — 4 x 8-12", "Dead Hangs / Assisted Hangs — 4 x 30-50 sec"]],
-          ["Chest + Triceps", ["Incline Pushups / Pushups — 4 x 12-20", "Bench Dips — 4 x 10-15"]],
-          ["Chest + Triceps", ["Close-Grip Incline Pushups — 4 x 10-15", "Bodyweight Triceps Extensions on Bench — 4 x 8-12"]],
-          ["Shoulders + Upper Legs", ["Pike Pushups — 4 x 8-12", "Bulgarian Split Squats — 4 x 10-14 each leg"]],
-          ["Shoulders + Upper Legs", ["Prone Y-T-W Raises — 4 x 8 each pattern", "Single-Leg Glute Bridges — 4 x 12 each side"]],
-          ["Calves/Forearms + Abs", ["Single-Leg Calf Raises — 4 x 15-25 each leg", "Reverse Crunches — 4 x 12-18"]],
-          ["Calves/Forearms + Abs", ["Wall Tibialis Raises — 4 x 20-30", "Plank with Posterior Pelvic Tilt — 4 x 40-60 sec"]]
-        ],
-        finisher: [
-          "Durability Finisher — 3 rounds",
-          "Gentle Neck Isometric Front — 15 sec",
-          "Gentle Neck Isometric Back — 15 sec",
-          "Gentle Neck Isometric Left and Right — 15 sec each side",
-          "Dead Hang — 20-40 sec",
-          "Rest — 60 sec"
-        ],
-        cooldown: [
-          "Lat Stretch — 60 sec each side",
-          "Hip Flexor Stretch — 60 sec each side",
-          "Figure-4 Stretch — 45 sec each side",
-          "Deep Breathing — 2 min"
-        ]
-      },
-      {
-        title: "DAY 8 — ASTA TRIAL DAY",
-        warmup: [
-          "Tiny Full-Body Warmup — 2 rounds only",
-          "Shoulder Rolls — 10 each direction",
-          "Scapular Pushups — 8 reps",
-          "Bodyweight Squats — 10 reps",
-          "Dead Bugs — 8 reps each side",
-          "Glute Bridge Hold — 20 sec",
-          "APT Prep — Posterior Pelvic Tilt Holds — 2 x 20 sec",
-          "APT Prep — Couch Stretch / Hip Flexor Stretch — 30 sec each side"
-        ],
-        supersets: [
-          ["Back + Biceps", ["Pullups / Chinups — 4 x 6-10", "Supinated Hang — 4 x 20-40 sec"]],
-          ["Back + Biceps", ["Archer Pullup Progression — 4 x 3-6 each side", "Self-Resisted Curl Isometric Holds — 4 x 20 sec each arm"]],
-          ["Chest + Triceps", ["Archer Pushups / Assisted Archer Pushups — 4 x 5-8 each side", "Bench Dips — 4 x 10-15"]],
-          ["Chest + Triceps", ["Pseudo Planche Pushup Lean Reps — 4 x 6-10", "Bodyweight Triceps Extensions on Bench — 4 x 8-12"]],
-          ["Shoulders + Upper Legs", ["Pike Pushups — 4 x 10-15", "Step-Ups — 4 x 12 each leg"]],
-          ["Shoulders + Upper Legs", ["Wall Walk Partial / Wall Handstand Hold — 4 x 20-45 sec", "Glute Bridge Marches — 4 x 12 each side"]],
-          ["Calves/Forearms + Abs", ["Calf Raises Slow Tempo — 4 x 20-30", "Power Tower Knee Raises — 4 x 12-18"]],
-          ["Calves/Forearms + Abs", ["Tibialis Raises — 4 x 20-30", "Hollow Body Hold / Tuck Hold — 4 x 30-60 sec"]]
-        ],
-        finisher: [
-          "Asta Trial Finisher — 5 rounds",
-          "Shadowboxing — 60 sec",
-          "Burpees — 8-12 reps",
-          "Bear Crawl — 20-30 sec",
-          "Mountain Climbers — 30 sec",
-          "Rest — 75-90 sec"
-        ],
-        cooldown: [
-          "Chest Stretch — 45 sec each side",
-          "Hip Flexor Stretch with Glute Squeeze — 60 sec each side",
-          "Child's Pose — 60 sec",
-          "Breathing Reset with Ribs Down — 2 min"
-        ]
-      }
+    const info={
+      ritualRules:{k:"System Law",t:"Ritual Rules",p:"How to keep the program hard, useful, and smart.",cards:[["Core Rules",["Bodyweight first. Use bands only if they genuinely improve the target better than pure bodyweight.","No reckless failure. Train hard, but protect speed, skill, and clean form.","APT control always: ribs down, abs lightly braced, glutes active, no lazy lower-back arching.","Explosiveness matters. The goal is force, control, movement quality, and physique."]],["Session Structure",["Warmup first, exactly as written.","Rest 60 to 90 seconds after each superset.","Use the finisher to build the battle engine, not to destroy technique.","Cooldown after every session."]],["Execution Mindset",["Skill before ego.","Better reps and harder variations beat random exhaustion.","Aggressive effort, calm form, honest self-assessment.","If something becomes sloppy, regress it and master it again."]],["Safety Reality",["Sharp pain means stop.","Lower-back domination in core work means reset the pelvis and regress the variation.","Sleep, food quality, and consistency decide whether this forges or breaks you.","Fighting skill still requires actual martial arts later."]]]},
+      progressionRules:{k:"Evolution Path",t:"Progression Rules",p:"Progress by quality first. Move to the next level only when the current level is owned.",cards:[["General Rule",["When you reach the top of the rep range for all sets with clean form, progress the movement next session.","Progress by: harder variation → slower tempo → longer pause → more repetitions → more range of motion.","If form breaks badly, stay where you are and own it first."]],["Pull Progression",["Pullups → paused pullups → towel pullups → archer pullup progression.","Chinups → chinup holds → chest-to-bar intent → explosive pullups.","Hangs → longer hangs → towel hangs → harder grip variations."]],["Push Progression",["Pushups → deficit pushups → diamond pushups → archer pushups → pseudo planche pushups.","Pike pushups → elevated pike pushups → wall handstand pushup negatives.","Bench dips → deeper controlled dips → advanced bodyweight triceps work."]],["Lower Body and Core",["Split squats → Bulgarian split squats → harder unilateral work.","Step-ups → faster step-ups → explosive step-ups or squat jumps.","Dead bugs → hollow holds → knee raises → leg raises → toes-to-bar."]]]},
+      aptMobility:{k:"Alignment and Mobility",t:"APT + Mobility Protocol",p:"Posture, flexibility, and pelvic control work for cleaner movement.",cards:[["Daily Protocol",["Posterior Pelvic Tilts — 2 sets of 10 slow repetitions","Dead Bugs — 2 sets of 8 repetitions each side","Glute Bridges — 2 sets of 12 repetitions","Half-Kneeling Hip Flexor Stretch with Glute Squeeze — 45 seconds each side","Couch Stretch — 45 seconds each side","Child’s Pose Breathing with Ribs Down — 5 slow breaths"]],["Key Cues",["Keep ribs down instead of flaring upward.","Tuck the pelvis gently in ab and hanging work.","Squeeze glutes during bridges and hip flexor stretches.","Do not let the lower back steal the movement."]],["Flexibility Priority",["Hip flexors","Quads","Hamstrings, gently","Calves","Thoracic and shoulder mobility through controlled movement"]],["Important Note",["The ab roller is still excluded for now because it can make lower-back arching worse if pelvic control is not locked in.","APT work supports appearance, movement efficiency, and core control."]]]},
+      skillGoals:{k:"Long-Term Targets",t:"Skill Goals",p:"These skills are not rushed. They are earned.",cards:[["Primary Targets",["Muscle-up","Human flag","Toes-to-bar","One-arm handstand pushup progression"]],["Secondary Carryover",["Better grip strength","Stronger hanging control","Better shoulder stability","More explosive movement and body control"]],["Path Philosophy",["Strength before stunt work.","Control before complexity.","Consistency before advanced skills."]],["Reality",["The body and engine can be built here.","Actual fighting skill still needs real martial arts instruction and practice later."]]]},
+      systemNotes:{k:"Execution Notes",t:"System Notes",p:"Notes that keep this from becoming motivational fantasy.",cards:[["Recovery",["Rest days are allowed and smart.","Insert recovery when movement quality and energy drop too hard.","Sleep matters even if you feel functional on less."]],["Nutrition Reality",["Fat loss is the current priority.","Protein should stay high and likely rise a little from your current average.","Food quality and controlling constant candy snacking matter a lot.","You do not need a dirty bulk to build a warrior physique."]],["Conditioning Reality",["The finisher is not optional fluff. It is where your battle engine is forged.","Shadowboxing, crawls, burpees, hangs, and explosive rounds improve stamina and movement under fatigue."]],["Truth",["This system can help forge the physique and engine.","Actual combat ability requires martial arts later, ideally Kyokushin, boxing, or grappling work."]]]}
+    };
+    const workouts=[
+      {title:"Day 1 — Bodyweight Control",sub:"Chest ignition, biceps tension, pelvic control, and explosive engine groundwork.",warmup:["Tiny Full-Body Warmup — 2 rounds total","Arm Circles — 10 each direction","Scapular Pushups — 8 repetitions","Bodyweight Squats — 10 repetitions","Glute Bridges — 10 repetitions","Dead Bugs — 8 repetitions each side","Posterior Pelvic Tilts — 2 sets of 10 slow repetitions","Half-Kneeling Hip Flexor Stretch with Glute Squeeze — 30 seconds each side"],supersets:[["Back and Biceps",["Chinups or Assisted Chinup Negatives — 4 sets of 4 to 8 repetitions","Supinated Dead Hang or Assisted Hang — 4 sets of 15 to 30 seconds"]],["Back and Biceps",["Scapular Pullups — 4 sets of 6 to 10 repetitions","Self-Resisted Curls — 4 sets of 10 to 12 repetitions each arm"]],["Chest and Triceps",["Pushups or Incline Pushups — 4 sets of 8 to 15 repetitions","Bench Dips — 4 sets of 8 to 12 repetitions"]],["Chest and Triceps",["Close-Grip Incline Pushups — 4 sets of 8 to 12 repetitions","Bodyweight Triceps Extensions on Bench — 4 sets of 6 to 10 repetitions"]],["Shoulders and Upper Legs",["Pike Pushups — 4 sets of 6 to 12 repetitions","Bulgarian Split Squats — 4 sets of 8 to 12 repetitions each leg"]],["Shoulders and Upper Legs",["Wall Walk Hold or Pike Hold — 4 sets of 15 to 30 seconds","Glute Bridges — 4 sets of 12 to 20 repetitions"]],["Calves, Forearms and Abs",["Single-Leg Calf Raises — 4 sets of 12 to 20 repetitions each leg","Power Tower Knee Raises with Posterior Pelvic Tilt — 4 sets of 8 to 15 repetitions"]],["Calves, Forearms and Abs",["Wall Tibialis Raises — 4 sets of 15 to 25 repetitions","Reverse Crunches with Posterior Pelvic Tilt — 4 sets of 10 to 15 repetitions"]]],finisher:["3 rounds","Shadowboxing — 60 seconds","Explosive Mountain Climbers — 30 seconds","Squat Pulses — 30 seconds","Rest — 60 seconds"],cooldown:["Slow Walk — 3 to 5 minutes","Couch Stretch or Hip Flexor Stretch — 45 seconds each side","Child’s Pose with Posterior Pelvic Tilt Focus — 45 seconds","Figure-4 Glute Stretch — 45 seconds each side","Deep Breathing with Ribs Down — 1 to 2 minutes"]},
+      {title:"Day 2 — Pull and Posture",sub:"Back line, grip spirit, and pull strength with posture armor.",warmup:["Tiny Full-Body Warmup — 2 rounds total","Shoulder Rolls — 10 each direction","Cat-Cow — 8 slow repetitions","Reverse Lunges — 8 repetitions each leg","Scapular Pullups — 6 repetitions","Knee Plank — 20 seconds","Dead Bugs — 2 sets of 8 repetitions each side","Glute Bridge Hold — 2 sets of 20 seconds"],supersets:[["Back and Biceps",["Pullups or Assisted Pullup Negatives — 4 sets of 3 to 8 repetitions","Chinup Top Holds or Assisted Top Holds — 4 sets of 8 to 15 seconds"]],["Back and Biceps",["Inverted Rows Under a Stable Bar or Safe Setup — 4 sets of 8 to 12 repetitions","Self-Resisted Hammer Curls — 4 sets of 10 to 12 repetitions each arm"]],["Chest and Triceps",["Incline Pushups — 4 sets of 10 to 15 repetitions","Bench Dips — 4 sets of 8 to 12 repetitions"]],["Chest and Triceps",["Pushup Eccentrics — 4 sets of 5 to 8 repetitions","Close-Grip Pushups from Knees or Incline — 4 sets of 8 to 12 repetitions"]],["Shoulders and Upper Legs",["Pike Pushups — 4 sets of 6 to 10 repetitions","Step-Ups on Bench — 4 sets of 10 repetitions each leg"]],["Shoulders and Upper Legs",["Bear Plank Shoulder Taps — 4 sets of 8 to 12 repetitions each side","Single-Leg Glute Bridges — 4 sets of 8 to 12 repetitions each side"]],["Calves, Forearms and Abs",["Standing Calf Raises with 2-Second Hold — 4 sets of 15 to 25 repetitions","Dead Bugs with Ribs Down — 4 sets of 8 to 12 repetitions each side"]],["Calves, Forearms and Abs",["Wall Tibialis Raises — 4 sets of 15 to 25 repetitions","Hollow Body Tuck Hold — 4 sets of 20 to 40 seconds"]]],finisher:["4 rounds","Shadowboxing Footwork — 45 seconds","Bear Crawl — 20 seconds","Dead Hang — 20 to 30 seconds","Rest — 60 seconds"],cooldown:["Slow Walk — 3 to 5 minutes","Lat Stretch — 45 seconds each side","Half-Kneeling Hip Flexor Stretch — 45 seconds each side","Figure-4 Glute Stretch — 45 seconds each side","Breathing Reset with Lower Back Relaxed — 1 to 2 minutes"]},
+      {title:"Day 3 — Push and Core",sub:"Chest emphasis and hard trunk control, with more front-chain authority.",warmup:["Tiny Full-Body Warmup — 2 rounds total","Arm Swings — 10 each direction","Scapular Pushups — 8 repetitions","Squat to Reach — 8 repetitions","Glute Bridges — 10 repetitions","Side Plank from Knees — 15 seconds each side","Posterior Pelvic Tilt Marches — 2 sets of 8 repetitions each side","Standing Quad or Hip Flexor Stretch — 30 seconds each side"],supersets:[["Back and Biceps",["Chinup Negatives — 4 sets of 3 to 6 repetitions","Supinated Hang or Assisted Hang — 4 sets of 15 to 30 seconds"]],["Back and Biceps",["Scapular Pullups — 4 sets of 6 to 10 repetitions","Self-Resisted Curls with Slow Lowering — 4 sets of 10 repetitions each arm"]],["Chest and Triceps",["Pushups — 4 sets of 8 to 15 repetitions","Bench Dips — 4 sets of 8 to 12 repetitions"]],["Chest and Triceps",["Wide Pushups or Incline Wide Pushups — 4 sets of 8 to 12 repetitions","Bodyweight Triceps Extensions on Bench — 4 sets of 6 to 10 repetitions"]],["Shoulders and Upper Legs",["Elevated Pike Pushups — 4 sets of 6 to 10 repetitions","Reverse Lunges — 4 sets of 8 to 12 repetitions each leg"]],["Shoulders and Upper Legs",["Wall Handstand Lean or Pike Hold — 4 sets of 15 to 30 seconds","Glute Bridge Marches — 4 sets of 10 repetitions each side"]],["Calves, Forearms and Abs",["Single-Leg Calf Raises — 4 sets of 12 to 20 repetitions each leg","Power Tower Knee Raises — 4 sets of 8 to 15 repetitions"]],["Calves, Forearms and Abs",["Seated Toe Raises — 4 sets of 15 to 25 repetitions","Plank with Posterior Pelvic Tilt — 4 sets of 25 to 45 seconds"]]],finisher:["4 rounds","Shadowboxing — 60 seconds","Burpees — 8 repetitions","Rest — 60 to 75 seconds"],cooldown:["Slow Walk — 3 to 5 minutes","Chest Stretch — 45 seconds each side","Couch Stretch — 45 seconds each side","Hamstring Stretch, gentle — 30 seconds each side","Deep Breathing with Abs Lightly Braced — 1 to 2 minutes"]},
+      {title:"Day 4 — Legs and Stability",sub:"Single-leg power, body control, and structural steadiness.",warmup:["Tiny Full-Body Warmup — 2 rounds total","March in Place — 30 seconds","Arm Circles — 10 each direction","Bodyweight Squats — 10 repetitions","Glute Bridges — 10 repetitions","Scapular Pullups or Hang Prep — 6 repetitions","Dead Bugs — 2 sets of 8 repetitions each side","Hip Flexor Stretch with Glute Squeeze — 30 seconds each side"],supersets:[["Back and Biceps",["Assisted Pullups or Jump-to-Slow Negatives — 4 sets of 3 to 6 repetitions","Self-Resisted Curls — 4 sets of 10 to 12 repetitions each arm"]],["Back and Biceps",["Prone Y-T Raises — 4 sets of 8 to 12 repetitions each pattern","Supinated Dead Hang or Assisted Hang — 4 sets of 15 to 30 seconds"]],["Chest and Triceps",["Incline Pushups — 4 sets of 10 to 15 repetitions","Close-Grip Incline Pushups — 4 sets of 8 to 12 repetitions"]],["Chest and Triceps",["Pushup Bottom Holds — 4 sets of 8 to 15 seconds","Bench Dips — 4 sets of 8 to 12 repetitions"]],["Shoulders and Upper Legs",["Pike Pushups — 4 sets of 6 to 12 repetitions","Step-Ups — 4 sets of 10 to 12 repetitions each leg"]],["Shoulders and Upper Legs",["Bear Plank Shoulder Taps — 4 sets of 8 to 12 repetitions each side","Bulgarian Split Squats — 4 sets of 8 to 12 repetitions each leg"]],["Calves, Forearms and Abs",["Calf Raises Slow Tempo — 4 sets of 15 to 25 repetitions","Reverse Crunches — 4 sets of 10 to 15 repetitions"]],["Calves, Forearms and Abs",["Tibialis Wall Raises — 4 sets of 15 to 25 repetitions","Side Plank — 4 sets of 20 to 40 seconds each side"]]],finisher:["4 rounds","Fast Step-Ups — 30 seconds","Squat Jumps or Fast Squat Drives — 8 repetitions","Shadowboxing Footwork — 30 seconds","Rest — 75 seconds"],cooldown:["Slow Walk — 3 to 5 minutes","Quad Stretch — 45 seconds each side","Hip Flexor Stretch — 45 seconds each side","Child’s Pose — 45 seconds","Breathing Reset — 1 to 2 minutes"]},
+      {title:"Day 5 — Calisthenics Strength",sub:"Heavier warrior day: more chest pressure, more pull authority, more spirit.",warmup:["Tiny Full-Body Warmup — 2 rounds total","Shoulder Rolls — 10 each direction","Scapular Pushups — 8 repetitions","Bodyweight Squats — 10 repetitions","Dead Bugs — 8 repetitions each side","Glute Bridge Hold — 20 seconds","Posterior Pelvic Tilt Holds — 2 sets of 20 seconds","Couch Stretch — 30 seconds each side"],supersets:[["Back and Biceps",["Chinups or Chinup Negatives — 4 sets of 3 to 8 repetitions","Chinup Midpoint Holds or Assisted Holds — 4 sets of 8 to 15 seconds"]],["Back and Biceps",["Scapular Pullups — 4 sets of 8 to 10 repetitions","Self-Resisted Curls — 4 sets of 10 to 12 repetitions each arm"]],["Chest and Triceps",["Deficit Pushups on Pushup Board or Regular Pushups — 4 sets of 8 to 15 repetitions","Bench Dips — 4 sets of 8 to 12 repetitions"]],["Chest and Triceps",["Diamond Incline Pushups — 4 sets of 8 to 12 repetitions","Bodyweight Triceps Extensions on Bench — 4 sets of 6 to 10 repetitions"]],["Shoulders and Upper Legs",["Pike Pushups — 4 sets of 8 to 12 repetitions","Reverse Lunges — 4 sets of 10 repetitions each leg"]],["Shoulders and Upper Legs",["Wall Walk Partial Repetitions or Pike Holds — 4 sets of 15 to 30 seconds","Single-Leg Glute Bridges — 4 sets of 10 to 12 repetitions each side"]],["Calves, Forearms and Abs",["Single-Leg Calf Raises — 4 sets of 15 to 20 repetitions each leg","Hanging Knee Raises — 4 sets of 10 to 15 repetitions"]],["Calves, Forearms and Abs",["Wall Tibialis Raises — 4 sets of 15 to 25 repetitions","Hollow Body Tuck Hold — 4 sets of 20 to 45 seconds"]]],finisher:["4 rounds","Burpees — 10 repetitions","Dead Hang — 20 to 40 seconds","Shadowboxing — 45 seconds","Rest — 75 seconds"],cooldown:["Slow Walk — 3 to 5 minutes","Lat Stretch — 45 seconds each side","Hip Flexor Stretch — 45 seconds each side","Glute Stretch — 45 seconds each side","Deep Breathing with Ribs Down — 1 to 2 minutes"]},
+      {title:"Day 6 — Athletic Control",sub:"Movement quality, reaction feel, and controlled aggression.",warmup:["Tiny Full-Body Warmup — 2 rounds total","March in Place — 30 seconds","Cat-Cow — 8 repetitions","Incline Pushups — 8 repetitions","Bodyweight Squats — 10 repetitions","Dead Bugs — 8 repetitions each side","Glute Bridges — 2 sets of 12 repetitions","Half-Kneeling Hip Flexor Stretch — 30 seconds each side"],supersets:[["Back and Biceps",["Pullup Negatives — 4 sets of 3 to 6 repetitions","Supinated Dead Hang — 4 sets of 15 to 30 seconds"]],["Back and Biceps",["Prone Swimmers — 4 sets of 8 to 12 repetitions","Self-Resisted Hammer Curls — 4 sets of 10 to 12 repetitions each arm"]],["Chest and Triceps",["Tempo Pushups or Incline Tempo Pushups — 4 sets of 8 to 12 repetitions","Close-Grip Pushups from Knees or Incline — 4 sets of 8 to 12 repetitions"]],["Chest and Triceps",["Pushup Shoulder Taps — 4 sets of 8 to 12 repetitions each side","Bench Dips — 4 sets of 8 to 12 repetitions"]],["Shoulders and Upper Legs",["Pike Pushups — 4 sets of 6 to 12 repetitions","Step-Ups — 4 sets of 10 to 12 repetitions each leg"]],["Shoulders and Upper Legs",["Wall Handstand Lean or Pike Hold — 4 sets of 15 to 30 seconds","Bodyweight Squat Pulses — 4 sets of 15 to 20 repetitions"]],["Calves, Forearms and Abs",["Calf Raise 1.5 Repetitions — 4 sets of 12 to 18 repetitions","Dead Bugs with Posterior Pelvic Tilt — 4 sets of 8 to 12 repetitions each side"]],["Calves, Forearms and Abs",["Tibialis Raises — 4 sets of 15 to 25 repetitions","Side Plank with Top-Leg Raise Optional — 4 sets of 20 to 35 seconds each side"]]],finisher:["5 rounds","Shadowboxing with Footwork — 45 seconds","Reaction Sprawl or Fast Down-Up — 6 repetitions","Mountain Climbers — 25 seconds","Rest — 60 seconds"],cooldown:["Slow Walk — 3 to 5 minutes","Chest Stretch — 45 seconds each side","Couch Stretch — 45 seconds each side","Calf Stretch — 45 seconds each side","Breathing Reset — 1 to 2 minutes"]},
+      {title:"Day 7 — Core and Posture",sub:"Abs, trunk armor, grip hanging, and posture refinement.",warmup:["Tiny Full-Body Warmup — 2 rounds total","Arm Circles — 10 each direction","Scapular Pullup Practice — 6 repetitions","Bodyweight Squats — 10 repetitions","Glute Bridges — 10 repetitions","Knee Plank — 20 seconds","Posterior Pelvic Tilt Marches — 2 sets of 8 repetitions each side","Hip Flexor Stretch — 30 seconds each side"],supersets:[["Back and Biceps",["Chinup Negatives — 4 sets of 3 to 6 repetitions","Self-Resisted Curls — 4 sets of 10 to 12 repetitions each arm"]],["Back and Biceps",["Scapular Pullups — 4 sets of 6 to 10 repetitions","Dead Hangs or Assisted Hangs — 4 sets of 20 to 40 seconds"]],["Chest and Triceps",["Incline Pushups or Pushups — 4 sets of 10 to 15 repetitions","Bench Dips — 4 sets of 8 to 12 repetitions"]],["Chest and Triceps",["Close-Grip Incline Pushups — 4 sets of 8 to 12 repetitions","Bodyweight Triceps Extensions on Bench — 4 sets of 6 to 10 repetitions"]],["Shoulders and Upper Legs",["Pike Pushups — 4 sets of 6 to 10 repetitions","Bulgarian Split Squats — 4 sets of 8 to 12 repetitions each leg"]],["Shoulders and Upper Legs",["Bear Plank Shoulder Taps — 4 sets of 8 to 12 repetitions each side","Single-Leg Glute Bridges — 4 sets of 10 to 12 repetitions each side"]],["Calves, Forearms and Abs",["Single-Leg Calf Raises — 4 sets of 12 to 20 repetitions each leg","Reverse Crunches — 4 sets of 10 to 15 repetitions"]],["Calves, Forearms and Abs",["Wall Tibialis Raises — 4 sets of 15 to 25 repetitions","Plank with Posterior Pelvic Tilt — 4 sets of 30 to 50 seconds"]]],finisher:["4 rounds","Dead Hang — 25 to 40 seconds","Hollow Body Hold — 20 to 30 seconds","Shadowboxing — 45 seconds","Rest — 60 seconds"],cooldown:["Slow Walk — 3 to 5 minutes","Lat Stretch — 45 seconds each side","Hip Flexor Stretch — 45 seconds each side","Figure-4 Stretch — 45 seconds each side","Deep Breathing — 1 to 2 minutes"]},
+      {title:"Day 8 — Bodyweight Refinement",sub:"Skill sharpening, clean movement, and warrior polish.",warmup:["Tiny Full-Body Warmup — 2 rounds total","Shoulder Rolls — 10 each direction","Scapular Pushups — 8 repetitions","Bodyweight Squats — 10 repetitions","Dead Bugs — 8 repetitions each side","Glute Bridge Hold — 20 seconds","Posterior Pelvic Tilt Holds — 2 sets of 20 seconds","Couch Stretch or Hip Flexor Stretch — 30 seconds each side"],supersets:[["Back and Biceps",["Pullups or Assisted Negatives — 4 sets of 3 to 8 repetitions","Supinated Hang or Assisted Hang — 4 sets of 15 to 30 seconds"]],["Back and Biceps",["Scapular Pullups — 4 sets of 8 to 10 repetitions","Self-Resisted Curl Isometric Holds — 4 sets of 15 to 20 seconds each arm"]],["Chest and Triceps",["Pushups or Incline Pushups — 4 sets of 8 to 15 repetitions","Bench Dips — 4 sets of 8 to 12 repetitions"]],["Chest and Triceps",["Decline Pushups or Regular Pushups — 4 sets of 6 to 12 repetitions","Bodyweight Triceps Extensions on Bench — 4 sets of 6 to 10 repetitions"]],["Shoulders and Upper Legs",["Pike Pushups — 4 sets of 8 to 12 repetitions","Step-Ups — 4 sets of 10 to 12 repetitions each leg"]],["Shoulders and Upper Legs",["Wall Walk Partial or Pike Hold — 4 sets of 15 to 30 seconds","Glute Bridge Marches — 4 sets of 10 repetitions each side"]],["Calves, Forearms and Abs",["Calf Raises Slow Tempo — 4 sets of 15 to 25 repetitions","Power Tower Knee Raises — 4 sets of 10 to 15 repetitions"]],["Calves, Forearms and Abs",["Tibialis Raises — 4 sets of 15 to 25 repetitions","Hollow Body Tuck Hold — 4 sets of 20 to 45 seconds"]]],finisher:["5 rounds","Shadowboxing — 60 seconds","Burpees — 8 to 10 repetitions","Bear Crawl — 20 seconds","Rest — 60 to 75 seconds"],cooldown:["Slow Walk — 3 to 5 minutes","Chest Stretch — 45 seconds each side","Hip Flexor Stretch with Glute Squeeze — 45 seconds each side","Child’s Pose — 45 seconds","Breathing Reset with Ribs Down — 1 to 2 minutes"]}
     ];
-
-    const protocol = [
-      "Goal: build a human Asta-style body — lean, explosive, durable, mobile, strong, and skilled with body control.",
-      "Primary physique focus: chest, abs, back, grip, posture, explosiveness, and athletic leanness.",
-      "Bodyweight is the default. Bands are allowed only where they add something bodyweight cannot easily replace, mainly rear delts, posture, shoulder health, and lat volume.",
-      "No dumbbells, barbell, or weighted resistance in the main ritual for now.",
-      "Ab roller is not used yet. It returns only after hollow holds and posterior pelvic tilt are clean under fatigue.",
-      "Rest 60-90 sec after each superset. Rest 75-120 sec when pullups, archer work, or handstand work demand it.",
-      "Do not chase ugly failure. Stop 1-2 reps before form breaks unless the set says trial or finisher.",
-      "APT rule: ribs down, abs lightly braced, glutes active, pelvis slightly tucked, no lazy lower-back arching.",
-      "Conditioning should be brutal but controlled. If technique collapses, slow down before you get reckless.",
-      "This routine builds the body and engine. Actual fighting skill still requires martial arts practice later."
-    ];
-
-    const progression = [
-      "Pushups progress toward deficit, archer, pseudo planche, and eventually one-arm pushup work.",
-      "Pullups progress toward paused reps, towel pulls, archer pullups, muscle-up prep, and explosive chest-to-bar pulls.",
-      "Shoulders progress from pike pushups to elevated pike pushups, wall handstand holds, wall walk partials, and handstand pushup negatives.",
-      "Core progresses from dead bugs and posterior pelvic tilts to hollow holds, power tower knee raises, leg raises, toes-to-bar, and dragon flag prep.",
-      "Grip progresses from dead hangs to towel hangs, mixed-grip hangs, chinup holds, and longer hang density.",
-      "Legs progress through Bulgarian split squats, pistol squat progressions, shrimp squats, step-ups, and controlled jump work.",
-      "Every 8-day cycle, improve one thing: one more rep, cleaner tempo, deeper range, longer hold, shorter rest, or harder variation."
-    ];
-
-    const mobility = [
-      "Daily APT Mini-Routine — 8-12 minutes on rest days or after long sitting.",
-      "Posterior Pelvic Tilts — 2 x 10 slow reps",
-      "Dead Bugs — 2 x 8-10 each side",
-      "Glute Bridges — 2 x 12-15",
-      "Half-Kneeling Hip Flexor Stretch with Glute Squeeze — 60 sec each side",
-      "Couch Stretch — 45-60 sec each side",
-      "Hollow Body Tuck Hold — 2 x 20-40 sec",
-      "Deep Breathing with Ribs Down — 2 min"
-    ];
-
-    const tabs = document.getElementById("tabs");
-    const app = document.getElementById("app");
-
-    workouts.forEach((workout, index) => {
-      const button = document.createElement("button");
-      button.textContent = "Day " + (index + 1);
-      if (index === 0) button.classList.add("active");
-      button.onclick = () => showDay(index);
-      tabs.appendChild(button);
-
-      const section = document.createElement("section");
-      section.className = "day" + (index === 0 ? " active" : "");
-
-      section.innerHTML = `
-        <h2 class="day-title">${workout.title}</h2>
-
-        <div class="block">
-          <h3>Warmup + APT Prep</h3>
-          <ul>${workout.warmup.map(item => `<li>${item}</li>`).join("")}</ul>
-        </div>
-
-        ${workout.supersets.map((superset, supersetIndex) => `
-          <details>
-            <summary>Superset ${supersetIndex + 1} — ${superset[0]}</summary>
-            <div class="content">
-              ${superset[1].map(exercise => {
-                const parts = exercise.split(" — ");
-                return `
-                  <div class="exercise">
-                    <div class="exercise-name">${parts[0]}</div>
-                    <div class="sets">${parts[1] || ""}</div>
-                  </div>
-                `;
-              }).join("")}
-            </div>
-          </details>
-        `).join("")}
-
-        <div class="block">
-          <h3>Warrior Finisher</h3>
-          <ul>${workout.finisher.map(item => `<li>${item}</li>`).join("")}</ul>
-        </div>
-
-        <div class="block">
-          <h3>Cooldown</h3>
-          <ul>${workout.cooldown.map(item => `<li>${item}</li>`).join("")}</ul>
-        </div>
-
-        <details>
-          <summary>Progression Rules</summary>
-          <div class="content"><ul>${progression.map(item => `<li>${item}</li>`).join("")}</ul></div>
-        </details>
-
-        <details>
-          <summary>Daily APT + Mobility Protocol</summary>
-          <div class="content"><ul>${mobility.map(item => `<li>${item}</li>`).join("")}</ul></div>
-        </details>
-
-        <div class="block">
-          <h3>Ritual Rules</h3>
-          <ul>${protocol.map(item => `<li class="${item.includes("Actual fighting") || item.includes("If technique") ? "warning" : ""}">${item}</li>`).join("")}</ul>
-        </div>
-      `;
-
-      app.appendChild(section);
-    });
-
-    function showDay(index) {
-      document.querySelectorAll(".day").forEach((day, i) => {
-        day.classList.toggle("active", i === index);
-      });
-
-      document.querySelectorAll(".tabs button").forEach((button, i) => {
-        button.classList.toggle("active", i === index);
-      });
-
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
+    function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===id));scrollTo({top:0,behavior:'smooth'})}
+    document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>showPage(b.dataset.page));
+    function renderInfo(id){const x=info[id],el=document.getElementById(id);el.innerHTML=`<div class="card"><div class="cardHead"><div class="kicker">${x.k}</div><h3>${x.t}</h3><p>${x.p}</p></div><div class="cardBody"><div class="grid">${x.cards.map(c=>`<div class="mini"><h4>${c[0]}</h4><ul>${c[1].map(i=>`<li>${i}</li>`).join('')}</ul></div>`).join('')}</div><div class="note">The goal is not to become tired for its own sake. The goal is to become stronger, leaner, faster, more controlled, and harder to break.</div></div></div>`}
+    ['ritualRules','progressionRules','aptMobility','skillGoals','systemNotes'].forEach(renderInfo);
+    const ds=document.getElementById('daySelector'),dp=document.getElementById('dayPanels');
+    workouts.forEach((d,i)=>{const btn=document.createElement('button');btn.className='dayBtn'+(i===0?' active':'');btn.textContent='Day '+(i+1);btn.onclick=()=>showDay(i);ds.appendChild(btn);const panel=document.createElement('div');panel.className='dayPanel'+(i===0?' active':'');panel.innerHTML=`<div class="card"><div class="cardHead"><div class="kicker">Black Bulls Ritual</div><h3>${d.title}</h3><p>${d.sub}</p></div><div class="cardBody"><div class="grid"><div class="mini"><h4>Warmup + APT Prep</h4><ul>${d.warmup.map(x=>`<li>${x}</li>`).join('')}</ul></div><div class="mini"><h4>Day Rules</h4><ul><li>Rest 60 to 90 seconds after each superset.</li><li>Train hard, but keep movement clean and athletic.</li><li>Use bands only if they truly improve the target.</li><li>Ribs down, pelvis controlled, glutes active.</li></ul></div></div>${d.supersets.map((s,n)=>`<details ${n===0?'open':''}><summary><span>Superset ${n+1} — ${s[0]}</span><span class="tag">Warrior Work</span></summary><div class="exWrap">${s[1].map(e=>{const p=e.split(' — ');return `<div class="exercise"><div class="exName">${p[0]}</div><div class="exMeta">${p[1]||''}</div></div>`}).join('')}</div></details>`).join('')}<div class="finisher"><h4>Warrior Finisher</h4><ul>${d.finisher.map(x=>`<li>${x}</li>`).join('')}</ul></div><div class="mini" style="margin-top:14px"><h4>Cooldown</h4><ul>${d.cooldown.map(x=>`<li>${x}</li>`).join('')}</ul></div><div class="note">This ritual builds the body, movement, and battle engine. Real combat ability still requires later martial arts training.</div></div></div>`;dp.appendChild(panel)});
+    function showDay(i){document.querySelectorAll('.dayBtn').forEach((b,n)=>b.classList.toggle('active',n===i));document.querySelectorAll('.dayPanel').forEach((p,n)=>p.classList.toggle('active',n===i));}
   </script>
 </body>
 </html>
